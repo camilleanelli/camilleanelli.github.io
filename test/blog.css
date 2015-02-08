@@ -1,0 +1,26 @@
+.homepage {
+    margin:auto;
+    height: 960px;
+    background-color: Gainsboro;
+    
+}
+
+header {
+    height: 250px;
+    width: auto;
+    background-color: white;
+}
+
+h1 {
+    text-align:  center;
+    color: SlateGray;
+}
+.intro {
+    text-align: center;
+    color: SlateGray;
+}
+
+
+
+    
+    
