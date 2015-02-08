@@ -1,0 +1,53 @@
+body {
+    font-family: sans-serif;
+}
+
+.homepage {
+    margin:auto;
+    height: 960px;
+    background-color: Gainsboro;
+    
+}
+
+header {
+    height: 250px;
+    width: auto;
+    background-color: white;
+}
+
+h1 {
+    text-align:  center;
+    color: SlateGray;
+}
+.intro {
+    text-align: center;
+    color: SlateGray;
+}
+
+.content {
+    height: 710px;
+    width: auto;
+}
+
+.contact {
+    padding-top: 0px;
+}
+a {
+    text-decoration: none;
+    color: SlateGray;
+}
+
+.logo {
+    height: 30px;
+    width: 30px;
+}
+    
+
+li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+    
+    
