@@ -1,3 +1,7 @@
+body {
+    font-family: sans-serif;
+}
+
 .homepage {
     margin:auto;
     height: 960px;
@@ -20,6 +24,24 @@ h1 {
     color: SlateGray;
 }
 
+.content {
+    height: 710px;
+    width: auto;
+}
+
+.contact {
+    padding-top: 0px;
+}
+.mail {
+    text-decoration: none;
+    color: black;
+}
+
+
+li {
+    display: inline-block;
+    padding-top: 0px;
+}
 
 
     
