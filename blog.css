@@ -13,15 +13,29 @@ header {
     height: 250px;
     width: auto;
     background-color: white;
+    border-bottom: 4px solid black;
 }
 
 h1 {
-    text-align:  center;
+    margin: auto;
+    text-align: center;
+    width: 300px;
     color: SlateGray;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    
 }
 .intro {
     text-align: center;
     color: SlateGray;
+    font-size: 20px;
+}
+.photo {
+    margin-left: 500px;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    
 }
 
 .content {
