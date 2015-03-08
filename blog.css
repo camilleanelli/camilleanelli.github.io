@@ -10,10 +10,10 @@ body {
 }
 
 header {
-    height: 250px;
+    height: 300px;
     width: auto;
     background-color: white;
-    border-bottom: 4px solid black;
+
 }
 
 h1 {
@@ -31,9 +31,10 @@ h1 {
     font-size: 20px;
 }
 .photo {
-    margin-left: 500px;
-    height: 200px;
-    width: 200px;
+    display: block;
+    margin: 0 auto;
+    height: 180px;
+    width: 180px;
     border-radius: 100px;
     
 }
@@ -43,23 +44,55 @@ h1 {
     width: auto;
 }
 
-.contact {
-    padding-top: 0px;
-}
+
 a {
     text-decoration: none;
     color: SlateGray;
 }
 
-.logo {
-    height: 30px;
-    width: 30px;
-}
+.links {
     
+    margin: auto;
+    
+}
+
+
+.at {
+    height: 60px;
+    width: 60px;
+}
+
+.git {
+    height: 60px;
+    width: 60px;
+}
+
+
+
+
+.links {
+    height: 100px;
+    width: 70%;
+    margin-top: 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    
+}
+
+ul {
+    margin-top: 10px;
+    text-align: center;
+    margin:auto;
+}
+
+
+
+
 
 li {
     display: inline-block;
     margin-left: 10px;
+    
 }
 
 
