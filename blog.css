@@ -5,7 +5,6 @@ body {
 .homepage {
     margin:auto;
     height: 960px;
-    background-color: Gainsboro;
     
 }
 
@@ -50,11 +49,7 @@ a {
     color: SlateGray;
 }
 
-.links {
-    
-    margin: auto;
-    
-}
+
 
 
 .at {
@@ -71,15 +66,17 @@ a {
 
 
 .links {
+    margin: auto;
     height: 100px;
     width: 70%;
-    margin-top: 10px;
+    margin-top: 100px;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     
 }
 
 ul {
+    
     margin-top: 10px;
     text-align: center;
     margin:auto;
