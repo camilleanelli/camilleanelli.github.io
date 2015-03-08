@@ -1,5 +1,6 @@
 body {
     font-family: sans-serif;
+    height: 100%;
 }
 
 .homepage {
@@ -11,27 +12,39 @@ body {
 header {
     height: 300px;
     width: auto;
-    background-color: white;
+    border-bottom: 1px solid black;
 
 }
 
 h1 {
-    margin: auto;
+    margin: 10px auto;
     text-align: center;
+    height: 4Opx;
     width: 300px;
     color: SlateGray;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     
 }
+
 .intro {
-    text-align: center;
-    color: SlateGray;
-    font-size: 20px;
+    
+width: 500px;
+margin:20px auto;
+text-align: center;
+color: SlateGray;
+font-size: 20px;
 }
-.photo {
+
+.moi {
+    margin-bottom: 20px;
     display: block;
-    margin: 0 auto;
+    margin: auto;
+    width: 180px;
+    
+}
+
+.photo {
     height: 180px;
     width: 180px;
     border-radius: 100px;
@@ -39,7 +52,7 @@ h1 {
 }
 
 .content {
-    height: 710px;
+    padding-top: 10px;
     width: auto;
 }
 
@@ -76,8 +89,8 @@ a {
 }
 
 ul {
-    
-    margin-top: 10px;
+    padding-top: 13px;
+    margin-top: 20px;
     text-align: center;
     margin:auto;
 }
@@ -92,6 +105,12 @@ li {
     
 }
 
+footer {
+    height: 100px;
+}
+
+    
+    
 
     
     
