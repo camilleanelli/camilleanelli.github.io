@@ -37,7 +37,8 @@ google_analytics: 59051029-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: http://www.camilleanelli.fr 
+url: http://www.camilleanelli.fr
+#url: http://localhost:4000
 
 # If you're hosting your site at a Project repository on GitHub pages 
 # (http://yourusername.github.io/repository-name)
@@ -45,6 +46,24 @@ url: http://www.camilleanelli.fr
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
+# Site owner
+owner:
+  name: Camille Anelli
+  avatar: https://avatars2.githubusercontent.com/u/10382549
+  bio: "Developpeuse web basée sur Paris"
+  email: 
+  disqus-shortname: 
+  twitter: CamilleAnelli
+  google:
+    plus: #username
+    analytics: 
+    verify: 
+    ad-client: 
+    ad-slot: 
+  bing-verify: 
+  github: #username
+  stackoverflow: #http://stackoverflow.com/users/123456/username
+  linkedin: #username
 #
 # !! You don't need to change any of the configuration flags below !!
 #
@@ -58,8 +77,8 @@ version: v1.0.0
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  sass_dir: _scss
-  style: :expanded # You might prefer to minify using :compressed
+  sass_dir: _sass
+  style: compressed
 
 # Use the following plug-ins
 gems:

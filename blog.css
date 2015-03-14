@@ -1,115 +1,87 @@
 body {
-    font-family: sans-serif;
-    height: 100%;
+  height: 100%;
 }
 
 .homepage {
-    margin:auto;
-    height: 960px;
-    
-}
-
-header {
-    height: 300px;
-    width: auto;
-
+  margin:auto;
 }
 
 h1 {
-    margin: 10px auto;
-    text-align: center;
-    height: 4Opx;
-    width: 300px;
-    color: SlateGray;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    
+  margin: 10px auto;
+  text-align: center;
+  line-height: 50px;
+  width: 300px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
 }
 
 .intro {
-    
-width: 500px;
-margin:20px auto;
-text-align: center;
-color: SlateGray;
-font-size: 20px;
+  width: 500px;
+  margin:20px auto;
+  text-align: center;
+  font-size: 17px;
 }
 
 .moi {
-    margin-bottom: 20px;
-    display: block;
-    margin: auto;
-    width: 180px;
-    
+  margin-bottom: 20px;
+  display: block;
+  margin: auto;
+  width: 180px;
 }
 
 .photo {
-    height: 180px;
-    width: 180px;
-    border-radius: 100px;
-    
+  height: 180px;
+  width: 180px;
+  border-radius: 100%;
+
 }
 
 .content {
-    padding-top: 10px;
-    width: auto;
+  padding-top: 10px;
+  width: auto;
 }
 
 
-a {
-    text-decoration: none;
-    color: SlateGray;
+.links a {
+  text-decoration: none;
+  color: SlateGray;
 }
-
-
-
 
 .at {
-    height: 60px;
-    width: 60px;
+  height: 60px;
+  width: 60px;
 }
 
 .git {
-    height: 60px;
-    width: 60px;
+  height: 60px;
+  width: 60px;
 }
-
-
 
 
 .links {
-    margin: auto;
-    height: 100px;
-    width: 70%;
-    margin-top: 100px;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    
+  margin: auto;
+  height: 100px;
+  width: 70%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
-ul {
-    padding-top: 13px;
-    margin-top: 20px;
-    text-align: center;
-    margin:auto;
+.links ul {
+  padding-top: 13px;
+  margin-top: 20px;
+  text-align: center;
+  margin:auto;
+}
+
+
+.links li {
+  display: inline-block;
+  margin-left: 10px;
 }
 
 
 
 
 
-li {
-    display: inline-block;
-    margin-left: 10px;
-    
-}
 
-footer {
-    height: 100px;
-}
 
-    
-    
-
-    
-    
