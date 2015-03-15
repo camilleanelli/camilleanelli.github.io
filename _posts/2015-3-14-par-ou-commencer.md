@@ -18,7 +18,7 @@ Je vous conseille de débuter sur le plus connu : [CodeCademy](http://www.codeca
 
 [![codecademy][2]][1]
 
-  [2]: /images/codecademy.png/
+  [2]: /images/codecademy.png
   [1]:http://www.codecademy.com/fr/canelli
 
 
