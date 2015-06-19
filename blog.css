@@ -1,5 +1,6 @@
 body {
   height: 100%;
+  font-family: sans-serif;
 }
 
 .homepage {
@@ -20,6 +21,8 @@ h1 {
   margin:20px auto;
   text-align: center;
   font-size: 17px;
+  color: #666666;
+
 }
 
 .moi {
@@ -27,6 +30,7 @@ h1 {
   display: block;
   margin: auto;
   width: 180px;
+
 }
 
 .photo {
@@ -61,7 +65,7 @@ h1 {
 .links {
   margin: auto;
   height: 100px;
-  width: 70%;
+  width: 60%;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
 }
@@ -80,7 +84,10 @@ h1 {
 }
 
 
+.spacer {
+  height: 200px;
 
+}
 
 
 
