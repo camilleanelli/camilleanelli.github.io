@@ -4,31 +4,44 @@
 <html>
   <head>
   {% include _head.html %}
-  <link type="text/css" rel="stylesheet" href="blog.css"/>
+
   </head>
-  <body>
+<body class="homepage">
 
-    <div id="main" role="main">
-      <header>
-        {% include _navigation.html %}
-        <h1>Camille Anelli</h1>
-        <p class="intro">Apprentie développeuse web Front-end, et basée sur Paris</p>
-        <p class="moi"><img src="images/camilleee.jpg" class="photo" alt="photo"/></p>
-      </header>
-      <div class="spacer"></div>
-      <div class="content">
-        <nav class="links">
-          <ul class="liens">
-            <li><a href="https://twitter.com/CamilleAnelli" class="tweet" alt="twitter"><img src="images/twitter.png" class="logo"/>Twitter</a></li>
-            <li><a href="mailto:camilleanelli32@gmail.com" class="mail" alt="adresse"><img src="images/contact.png" class="at"/>Me contacter</a></li>
-            <li><a href="https://github.com/camilleanelli" class="git" alt="git" ><img src="images/github.png" class="git"/>Github</a></li>
-            <li><a href="http://www.codecademy.com/fr/canelli" class="code" alt="code"><img src="images/code.png"/>profil Codecademy</a></li>
-          </ul>
 
-        </nav> 
-      </div>
-      <footer></footer>
-    </div>
+<section id=header class="home-header">
+<nav>
+  <ul class="home-nav">
+    <li>Contact</li>
+    <li>Portefolio</li>
+    <li>Articles</li>
+    <li>Liens</li>
+  </ul>
+</nav>
+
+<div class="moi"><img src="images/camilleee.jpg" class="photo" alt="photo"/></div>
+<h1>Web developer from Paris</h1>
+</section>
+
+<section id="posts">
+
+  {% for post in site.posts %}
+
+    <div class="card-post">
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} - {{ post.date |  date: '%d/%m/%Y'}}</a></h2>
+
+   </div>
+  {% endfor %}
+</section>
+
+<section id="footer">
+  <ul class="links">
+    <li><a href="https://fr.linkedin.com/in/camilleanelli"><i class="fa fa-linkedin-square fa-4x"></i></a></li>
+    <li><a href="mailto:camilleanelli32@gmail.com"><i class="fa fa-envelope fa-4x"></i></a></li>
+    <li><a href="https://github.com/camilleanelli"><i class="fa fa-github fa-4x"></i></a></li>
+  </ul>
+</section>
+
       {% include analytics.html %}
   </body>
 </html>

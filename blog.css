@@ -1,87 +1,103 @@
-body {
-  height: 100%;
+.homepage {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   font-family: sans-serif;
+
 }
 
-.homepage {
-  margin:auto;
+.home-header {
+  background: rgba(224, 130, 131, 1);
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1 {
-  margin: 10px auto;
+  font-family: 'Lobster', cursive;
   text-align: center;
-  line-height: 50px;
-  width: 300px;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
+  color: white;
 }
 
-.intro {
-  width: 500px;
-  margin:20px auto;
-  text-align: center;
-  font-size: 17px;
-  color: #666666;
+nav {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  background-color: inherit;
+  justify-content: flex-end;
+}
 
+.home-nav{
+  width: 500px;
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*******
+section posts
+******/
+
+#posts {
+  flex: 1;
+  padding-top: 20px;
+  font-family: sans-serif;
+  color: grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card-post {
+  align-content: center;
+  width: 300px;
+  height: 150px;
+  background-color: ;
 }
 
 .moi {
-  margin-bottom: 20px;
-  display: block;
   margin: auto;
-  width: 180px;
-
 }
 
 .photo {
   height: 180px;
   width: 180px;
   border-radius: 100%;
-
 }
 
-.content {
-  padding-top: 10px;
-  width: auto;
+#footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: grey;
 }
-
-
-.links a {
-  text-decoration: none;
-  color: SlateGray;
-}
-
-.at {
-  height: 60px;
-  width: 60px;
-}
-
-.git {
-  height: 60px;
-  width: 60px;
-}
-
-
 .links {
-  margin: auto;
-  height: 100px;
-  width: 60%;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  width: 500px;
 }
 
-.links ul {
-  padding-top: 13px;
-  margin-top: 20px;
-  text-align: center;
-  margin:auto;
+.links li a {
+  color: rgba(224, 130, 131, 1);
+
+  align-items: center;
 }
 
 
-.links li {
-  display: inline-block;
-  margin-left: 10px;
-}
+
+
+
+
 
 
 .spacer {
@@ -89,6 +105,8 @@ h1 {
 
 }
 
-
-
-
+@media (min-width: 1300px) {
+  nav {
+    justify-content: center;
+  }
+}
