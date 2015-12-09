@@ -12,10 +12,10 @@
 <section id=header class="home-header">
 <nav>
   <ul class="home-nav">
-    <li>Contact</li>
-    <li>Portefolio</li>
-    <li>Articles</li>
-    <li>Liens</li>
+    <li><a href="mailto:camilleanelli32@gmail.com">Contact</a></li>
+    <li><a href="http://alumni.lewagon.org/camilleanelli" target="_blank">Portefolio</a></li>
+    <li><a href="#posts">Articles</a></li>
+    <li><a href="#footer">Links</a></li>
   </ul>
 </nav>
 
@@ -35,12 +35,20 @@
 </section>
 
 <section id="footer">
-  <ul class="links">
+  <div class="links"></div>
+  <ul class="links links-phone">
     <li><a href="https://fr.linkedin.com/in/camilleanelli" target="_blank"><i class="fa fa-linkedin-square fa-4x"></i></a></li>
     <li><a href="mailto:camilleanelli32@gmail.com" target="_blank"><i class="fa fa-envelope fa-4x"></i></a></li>
     <li><a href="https://github.com/camilleanelli" target="_blank"><i class="fa fa-github fa-4x"></i></a></li>
   </ul>
+  <div class="links"></div>
 </section>
+ <div>
+  {% include _footer.html %}
+</div>
+
+
+
 
       {% include analytics.html %}
   </body>

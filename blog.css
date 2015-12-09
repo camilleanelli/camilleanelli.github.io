@@ -28,10 +28,20 @@ nav {
   display: flex;
   height: 50px;
   width: 100%;
-  color: white;
-  font-weight: bold;
+
   background-color: inherit;
   justify-content: flex-end;
+}
+
+nav .home-nav li a {
+  color: white;
+  font-weight: bold;
+
+}
+
+nav ul li a:hover {
+  color: white;
+  font-weight: bold;
 }
 
 .home-nav{
@@ -75,38 +85,46 @@ section posts
 
 #footer {
   display: flex;
-  width: 100%;
+  width: auto;
+  height: 300px;
+  flex-direction: row;
   justify-content: center;
-  background-color: grey;
+  flex-wrap: wrap;
+
 }
 .links {
   display: flex;
   flex-direction: row;
   list-style: none;
   justify-content: space-between;
-  width: 500px;
+  flex: 1;
+  margin: auto;
+
+
 }
+
 
 .links li a {
   color: rgba(224, 130, 131, 1);
 
-  align-items: center;
 }
-
-
-
-
-
-
-
 
 .spacer {
   height: 200px;
-
 }
 
 @media (min-width: 1300px) {
   nav {
     justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #footer {
+    height: 100px;
+  }
+
+  .links-phone {
+     flex-grow: 6;
   }
 }
