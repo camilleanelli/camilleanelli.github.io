@@ -1,14 +1,17 @@
 ---
-layout: post
+layout: article
 title: Par où commencer pour se lancer dans la programmation web?
 ---
-#Les ressources pour bien débuter le développement web#
+
+...
+
+
 
 Depuis maintenant quelques mois, je me forme au développement web. Il y a de nombreuses ressources sur internet mais toutes ne sont pas aussi efficaces pour les débutants, c’est pourquoi je souhaite vous faire partager mon expérience.
 
 ###Les formations en ligne###
 
-Les formations les plus simples pour commencer sont celles où l’on apprend en codant directement dans le navigateur. Le principe est souvent le même : on vous forme via des cours à lire ou des tutos . On vous propose ensuite d’écrire directement les lignes de codes dans la page pour donner vos solutions à différents challenges. 
+Les formations les plus simples pour commencer sont celles où l’on apprend en codant directement dans le navigateur. Le principe est souvent le même : on vous forme via des cours à lire ou des tutos . On vous propose ensuite d’écrire directement les lignes de codes dans la page pour donner vos solutions à différents challenges.
 
 
 ####Formation en français####
@@ -20,7 +23,7 @@ Je vous conseille de débuter sur le plus connu : [CodeCademy](http://www.codeca
 
   [2]: /images/codecademy.png
   [1]:http://www.codecademy.com/fr/canelli
-  
+
 ...
 
 [OpenClassroom](http://openclassrooms.com/) est une formation beaucoup plus théorique, sur laquelle on trouve tous les sujets qui peuvent vous intéresser. Pour bien suivre ces cours, je recommande d’utiliser son éditeur de texte à côté, ou une application qui s’appelle [JSFiddle](https://jsfiddle.net/). Ce site est payant si vous souhaitez valider des badges. En ce qui me concerne, j’ai pu étudier du CSS , Bootstrap, Linux, Github, et d’autres sujets tels que Javascript.
@@ -56,13 +59,3 @@ Il s’agit de conférences qui permettent de rencontrer des personnes dans les 
 ###Les formations en école###
 
 Si vous avez du temps devant vous, il peut être intéressant de trouver une formation près de chez vous. Après m’être renseignée sur un grand nombre de formations il est important de bien la choisir. Toutes ne sont pas équivalentes; en effet, certaines sont trop courtes, trop chères, pas à jour. Prenez bien le temps de regarder les avis des promotions précédentes avant de choisir votre formation.
-
-
-
-
-
-
-
-
-
-

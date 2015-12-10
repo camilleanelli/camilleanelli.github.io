@@ -1,94 +1,202 @@
 body {
-  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   font-family: sans-serif;
+
 }
 
-.homepage {
-  margin:auto;
+.home-header {
+  background: rgba(224, 130, 131, 1);
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1 {
-  margin: 10px auto;
+  font-family: 'Lobster', cursive;
   text-align: center;
-  line-height: 50px;
-  width: 300px;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
+  color: white;
 }
 
-.intro {
-  width: 500px;
-  margin:20px auto;
-  text-align: center;
-  font-size: 17px;
-  color: #666666;
+.nav {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  background-color: inherit;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.name {
+  flex: 1;
+  width: 50%;
+  color: white;
+  font-size: 25px;
+  font-family: 'Lobster', cursive;
+  margin-left: 10px;
+
+
+}
+
+.nav .home-nav li a {
+  color: white;
+  font-weight: bold;
+
+}
+
+.nav ul li a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.home-nav{
+  flex: 1;
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+/*******
+section posts
+******/
+
+#posts {
+  flex: 1;
+  padding-top: 20px;
+  font-family: sans-serif;
+  color: grey;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+
+
+}
+
+.card-post {
+  align-self: center;
 
 }
 
 .moi {
-  margin-bottom: 20px;
-  display: block;
   margin: auto;
-  width: 180px;
-
 }
 
 .photo {
   height: 180px;
   width: 180px;
   border-radius: 100%;
-
 }
 
-.content {
-  padding-top: 10px;
+#footer {
+  display: flex;
   width: auto;
+  height: 300px;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+
 }
-
-
-.links a {
-  text-decoration: none;
-  color: SlateGray;
-}
-
-.at {
-  height: 60px;
-  width: 60px;
-}
-
-.git {
-  height: 60px;
-  width: 60px;
-}
-
-
 .links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  flex: 1;
   margin: auto;
-  height: 100px;
-  width: 60%;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-}
-
-.links ul {
-  padding-top: 13px;
-  margin-top: 20px;
-  text-align: center;
-  margin:auto;
 }
 
 
-.links li {
-  display: inline-block;
-  margin-left: 10px;
+.links li a {
+  color: rgba(224, 130, 131, 1);
+  flex: 1;
 }
-
 
 .spacer {
-  height: 200px;
+  height: 100px;
+}
 
+hr {
+  width: 100px;
+  border: 2px solid grey;
+  margin: auto;
+  background-color: grey;
+  border-radius: 15px;
+}
+
+.mini-space {
+  height: 30px;
+}
+
+.date {
+  margin: auto;
+}
+
+/*******
+layout article.html
+*******/
+
+.content {
+
+  display: flex;
+  min-height: 100vh;
+}
+.nav-article {
+  background: rgba(224, 130, 131, 1);
+  min-height: 100vh;
+  font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  }
+
+.nav-article ul {
+  list-style: circle;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.nav-article ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-article ul li a:hover {
+  text-decoration: none;
+  color: white;
+}
+.photo-article {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+
+.margin-nav-post {
+  margin: 20px;
 }
 
 
 
+@media (max-width: 768px) {
+  .nav {
+    justify-content: center;
 
+  }
+
+ #footer {
+    height: 100px;
+  }
+
+  .links-phone {
+     flex-grow: 6;
+  }
+}

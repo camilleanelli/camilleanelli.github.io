@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8"> 
-<title>blog de Camille Anelli</title>
+{% include _head.html %}
 <link type="text/css" rel="stylesheet" href="/blog.css"/>
-    
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 
 <body>
 
-<div class="homepage">
-  
-    <header>
-      <h1>Camille Anelli</h1>
-      <p class="intro">Apprentie développeuse web front-end, et basée sur Paris.</p>
-    <p class="moi"><img src="/images/camilleee.jpg" class="photo" alt="photo"/></p>
-</header>
- <div class="content">   
-
-    {{content}}
-    
+  <div class="row content">
+    <div class="col-md-2 nav-article">
+      <div class="moi margin-nav-post"><img src="/images/camilleee.jpg" class="photo-article" alt="photo"/></div>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="mailto:camilleanelli32@gmail.com">Contact</a></li>
+      </ul>
     </div>
-    
-<footer></footer>
+    <div class="col-md-8 col-md-offset-1">
+    <article class="post">
+    <h1><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
+    <div class="spacer"></div>
+      <div class="article-wrap">
+        {{ content }}
+      </div><!-- /.article-wrap -->
+    </article>
+ </div>
 </div>
 
 {% include analytics.html %}
