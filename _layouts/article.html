@@ -2,22 +2,33 @@
 <html>
 <head>
 {% include _head.html %}
-
-
+<link type="text/css" rel="stylesheet" href="/blog.css"/>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 
 <body>
 
-<div class="homepage">
-
- <div class="content">
-
-    {{content}}
-
+  <div class="row content">
+    <div class="col-md-2 nav-article">
+      <div class="moi margin-nav-post"><img src="/images/camilleee.jpg" class="photo-article" alt="photo"/></div>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="mailto:camilleanelli32@gmail.com">Contact</a></li>
+      </ul>
     </div>
+    <div class="col-md-8 col-md-offset-1">
+    <article class="post">
+
+      <div class="article-wrap">
+        {{ content }}
+      </div><!-- /.article-wrap -->
+    </article>
+ </div>
+</div>
 
 <footer></footer>
-</div>
+
 
 {% include analytics.html %}
 

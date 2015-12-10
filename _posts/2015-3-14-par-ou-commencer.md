@@ -3,6 +3,9 @@ layout: article
 title: Par où commencer pour se lancer dans la programmation web?
 ---
 #Les ressources pour bien débuter le développement web#
+...
+
+
 
 Depuis maintenant quelques mois, je me forme au développement web. Il y a de nombreuses ressources sur internet mais toutes ne sont pas aussi efficaces pour les débutants, c’est pourquoi je souhaite vous faire partager mon expérience.
 

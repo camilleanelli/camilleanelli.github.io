@@ -1,4 +1,4 @@
-.homepage {
+body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -99,8 +99,6 @@ section posts
   justify-content: space-between;
   flex: 1;
   margin: auto;
-
-
 }
 
 
@@ -111,6 +109,49 @@ section posts
 
 .spacer {
   height: 200px;
+}
+
+/*******
+layout article.html
+*******/
+
+.content {
+  height: auto;
+  display: flex;
+}
+.nav-article {
+  background: rgba(224, 130, 131, 1);
+  height: auto;
+  font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: flex-start;
+  }
+
+.nav-article ul {
+  list-style: circle;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.nav-article ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-article ul li a:hover {
+  text-decoration: none;
+  color: white;
+}
+.photo-article {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+
+.margin-nav-post {
+  margin-top: 20px;
 }
 
 @media (min-width: 1300px) {
