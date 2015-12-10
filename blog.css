@@ -24,32 +24,44 @@ h1 {
   color: white;
 }
 
-nav {
+.nav {
   display: flex;
   height: 50px;
   width: 100%;
-
   background-color: inherit;
-  justify-content: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-nav .home-nav li a {
+.name {
+  flex: 1;
+  width: 50%;
+  color: white;
+  font-size: 25px;
+  font-family: 'Lobster', cursive;
+  margin-left: 10px;
+
+
+}
+
+.nav .home-nav li a {
   color: white;
   font-weight: bold;
 
 }
 
-nav ul li a:hover {
+.nav ul li a:hover {
   color: white;
   font-weight: bold;
 }
 
 .home-nav{
-  width: 500px;
+  flex: 1;
   display: flex;
   list-style: none;
   flex-direction: row;
   justify-content: space-around;
+
 }
 
 /*******
@@ -62,15 +74,15 @@ section posts
   font-family: sans-serif;
   color: grey;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  align-content: flex-start;
+
+
 }
 
 .card-post {
-  align-content: center;
-  width: 300px;
-  height: 150px;
-  background-color: ;
+  align-self: center;
+
 }
 
 .moi {
@@ -88,8 +100,8 @@ section posts
   width: auto;
   height: 300px;
   flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
+
 
 }
 .links {
@@ -104,11 +116,27 @@ section posts
 
 .links li a {
   color: rgba(224, 130, 131, 1);
-
+  flex: 1;
 }
 
 .spacer {
-  height: 200px;
+  height: 100px;
+}
+
+hr {
+  width: 100px;
+  border: 2px solid grey;
+  margin: auto;
+  background-color: grey;
+  border-radius: 15px;
+}
+
+.mini-space {
+  height: 30px;
+}
+
+.date {
+  margin: auto;
 }
 
 /*******
@@ -116,16 +144,18 @@ layout article.html
 *******/
 
 .content {
-  height: auto;
+
   display: flex;
+  min-height: 100vh;
 }
 .nav-article {
   background: rgba(224, 130, 131, 1);
-  height: auto;
+  min-height: 100vh;
   font-family: 'Lobster', cursive;
   color: white;
   font-size: 30px;
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   }
 
@@ -151,17 +181,18 @@ layout article.html
 }
 
 .margin-nav-post {
-  margin-top: 20px;
+  margin: 20px;
 }
 
-@media (min-width: 1300px) {
-  nav {
-    justify-content: center;
-  }
-}
+
 
 @media (max-width: 768px) {
-  #footer {
+  .nav {
+    justify-content: center;
+
+  }
+
+ #footer {
     height: 100px;
   }
 

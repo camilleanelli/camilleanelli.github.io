@@ -2,7 +2,7 @@
 layout: article
 title: Par où commencer pour se lancer dans la programmation web?
 ---
-#Les ressources pour bien débuter le développement web#
+
 ...
 
 
