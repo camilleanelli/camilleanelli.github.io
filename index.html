@@ -10,8 +10,9 @@
 
 
 <section id=header class="home-header">
-<div class="nav">
-  <p class="name">Camille anelli</p>
+<div class="nav text-center">
+  <p class="name">Camille Anelli</p>
+  <div class="hidden-xs hidden-sm space-middle"></div>
   <ul class="home-nav">
     <li><a href="mailto:camilleanelli32@gmail.com">Contact</a></li>
     <li><a href="http://alumni.lewagon.org/camilleanelli" target="_blank">Portfolio</a></li>
@@ -22,14 +23,14 @@
 </div>
 
 <div class="moi"><img src="images/camilleee.jpg" class="photo" alt="photo"/></div>
-<h1>Web developer from Paris</h1>
+<h1 class="title">Web developer from Paris</h1>
 </section>
 
 <section id="posts">
 
   {% for post in site.posts %}
 
-    <div class="card-post">
+    <div class="card-post text-center">
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
       <p class="date"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date |  date: '%d/%m/%Y'}}</a><p>
     </div>
@@ -52,10 +53,10 @@
  {% include _footer.html %}
 </div>
 
+{% include analytics.html %}
 
+<script>
 
-
-
-      {% include analytics.html %}
+</script>
   </body>
 </html>

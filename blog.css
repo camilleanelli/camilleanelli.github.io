@@ -40,21 +40,28 @@ h1 {
   font-size: 25px;
   font-family: 'Lobster', cursive;
   margin-left: 10px;
+}
 
-
+.title {
+  color: white;
+  font-family: 'Lobster', cursive;
 }
 
 .nav .home-nav li a {
   color: white;
   font-weight: bold;
+  font-size: 20px;
 
 }
 
 .nav ul li a:hover {
+  text-decoration: none;
   color: white;
   font-weight: bold;
 }
-
+.space-middle {
+  flex: 1;
+}
 .home-nav{
   flex: 1;
   display: flex;
@@ -76,13 +83,10 @@ section posts
   display: flex;
   flex-direction: column;
   align-content: flex-start;
-
-
 }
 
-.card-post {
-  align-self: center;
-
+.card-post a:hover {
+  text-decoration: none;
 }
 
 .moi {
