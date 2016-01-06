@@ -112,6 +112,7 @@ section posts
   text-decoration: none;
 }
 
+
 .moi {
   margin: auto;
 }
@@ -125,9 +126,10 @@ section posts
 #footer {
   display: flex;
   width: auto;
-  height: 300px;
+  height: 200px;
   flex-direction: row;
   flex-wrap: wrap;
+  background-color: grey;
 
 
 }
@@ -150,12 +152,12 @@ section posts
   height: 100px;
 }
 
-hr {
+.hr-posts {
   width: 100px;
-  border: 2px solid grey;
+  border: 2px solid gray;
   margin: auto;
-  background-color: grey;
-  border-radius: 15px;
+  background-color: gray;
+  border-radius: 5px;
 }
 
 .mini-space {
