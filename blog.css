@@ -233,10 +233,11 @@ layout article.html
 @media (max-width: 768px) {
   .nav {
     justify-content: center;
-
   }
-
- #footer {
+  .home-header {
+    height: 100px;
+  }
+#footer {
     height: 100px;
   }
 
