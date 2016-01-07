@@ -9,7 +9,7 @@ When I worked on my website using ruby on rails (a backpack list for digital nom
 
 [ Here the documentation ](http://api.rubyonrails.org/classes/ActionController/HttpAuthentication/Basic.html)
 
-**First, to use this kind of authentication, I add this method in my file controllers/categories_controller.rb:**
+1. **First, to use this kind of authentication, I add this method in my file controllers/categories_controller.rb:**
 
 class CategoriesController < ApplicationController
 
@@ -18,7 +18,7 @@ class CategoriesController < ApplicationController
 end
 
 
-**As a result, when I clic to add a new category I can see in my browser:**
+2. **As a result, when I clic to add a new category I can see in my browser:**
 
 ![Popup](/images/popup.png)
 

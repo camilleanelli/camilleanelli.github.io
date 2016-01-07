@@ -2,6 +2,8 @@
 layout: article
 title: Center an element in CSS, using flex-box
 ---
+
+## . ##
 I think the best way to center an element is to use flex-box.
 For example, we need to center a title in a beautiful home page.
 

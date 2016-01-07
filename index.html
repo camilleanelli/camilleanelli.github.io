@@ -27,18 +27,19 @@
 </section>
 
 <section id="posts">
+  <h1 class="title-section">Articles</h1>
 
   {% for post in site.posts %}
 
     <div class="card-post text-center">
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-      <p class="date"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date |  date: '%d/%m/%Y'}}</a><p>
+      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+      <p class="date">{{ post.date |  date: '%d/%m/%Y'}}<p>
     </div>
-    <div class="mini-space"></div>
-    <hr>
+
+    <hr class="hr-posts">
   {% endfor %}
 </section>
-
+<div class="mini-space"></div>
 <section id="footer">
   <div class="links"></div>
   <ul class="links links-phone">
@@ -49,6 +50,8 @@
   <div class="links"></div>
 
 </section>
+
+
 <div>
  {% include _footer.html %}
 </div>
