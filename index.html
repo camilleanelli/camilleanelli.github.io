@@ -8,22 +8,25 @@
   </head>
 <body class="homepage">
 
-
 <section id=header class="home-header">
-<div class="nav text-center">
-  <p class="name">Camille Anelli</p>
-  <div class="hidden-xs hidden-sm space-middle"></div>
-  <ul class="home-nav">
-    <li><a href="mailto:camilleanelli32@gmail.com">Contact</a></li>
-    <li><a href="http://alumni.lewagon.org/camilleanelli" target="_blank">Portfolio</a></li>
-    <li><a href="#posts">Articles</a></li>
-    <li><a href="#footer">Links</a></li>
-  </ul>
-
-</div>
-
-<div class="moi"><img src="images/camilleee.jpg" class="photo" alt="photo"/></div>
-<h1 class="title">Web developer from Paris</h1>
+  <div class="row">
+    <div class="col-md-4">
+      <p class="name">Camille Anelli</p>
+    </div>
+    <div class="hidden-xs col-md-4"></div>
+    <div class="col-md-4">
+      <ul class="home-nav">
+        <li><a href="mailto:camilleanelli32@gmail.com">Contact</a></li>
+        <li><a href="http://alumni.lewagon.org/camilleanelli" target="_blank">Portfolio</a></li>
+        <li><a href="#posts">Articles</a></li>
+        <li><a href="#footer">Links</a></li>
+      </ul>
+    </div>
+   </div>
+  <div class="row text-center photo-header">
+    <div class="moi"><img src="images/camilleee.jpg" class="photo" alt="photo"/></div>
+    <h1 class="title">Web developer from Paris</h1>
+  </div>
 </section>
 
 <section id="posts">
@@ -52,14 +55,12 @@
 </section>
 
 
-<div>
- {% include _footer.html %}
-</div>
+
 
 {% include analytics.html %}
 
-<script>
-
-</script>
+<div>
+ {% include _footer.html %}
+</div>
   </body>
 </html>
