@@ -76,7 +76,7 @@ h1 {
 
 .article-wrap {
   font-family: sans-serif;
-  color: grey;
+  color: #22313F;
   font-size: 18px;
 
 }
@@ -188,8 +188,8 @@ layout article.html
   text-decoration: none;
 }
 .content {
-
-  display: flex;
+ background-color: #DADFE1;
+ display: flex;
   min-height: 100vh;
 }
 .nav-article {
@@ -228,7 +228,10 @@ layout article.html
   margin: 20px;
 }
 
-
+.grey {
+  min-height: 100vh;
+  background-color: #DADFE1;
+}
 
 @media (max-width: 768px) {
   .nav {
@@ -240,8 +243,7 @@ layout article.html
 #footer {
     height: 100px;
   }
-
-  .links-phone {
+ .links-phone {
      flex-grow: 6;
   }
 }
