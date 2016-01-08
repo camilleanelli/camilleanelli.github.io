@@ -190,7 +190,19 @@ layout article.html
 .content {
  background-color: #DADFE1;
  display: flex;
-  min-height: 100vh;
+ min-height: 100vh;
+}
+
+.content-xs {
+  background-color:  rgba(224, 130, 131, 1);
+  color: white;
+  font-family: 'Lobster', cursive;
+}
+
+.content-xs a,
+.content-xs a:hover {
+  color: white;
+  text-decoration: none;
 }
 .nav-article {
   background: rgba(224, 130, 131, 1);
