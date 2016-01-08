@@ -1,6 +1,6 @@
 ---
 layout: article
-title: How to make a sticky footer?
+title: Sticky footer, the different solutions
 ---
 
 ## . ##
