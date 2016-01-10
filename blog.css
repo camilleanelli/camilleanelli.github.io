@@ -3,11 +3,13 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   min-height: 100vh;
-  /*display: flex;
+  display: flex;
   flex-direction: column;
-  flex-wrap: wrap;*/
+  flex-wrap: wrap;
+}
 
-
+.container-height {
+  min-height: calc(100vh - 500px);
 }
 
 .home-header {
@@ -153,7 +155,7 @@ section posts
 
 .links li a {
   color: rgba(224, 130, 131, 1);
-  flex: 1;
+  /*flex: 1;*/
 }
 
 .spacer {
@@ -163,6 +165,7 @@ section posts
 
 footer {
   background-color: grey;
+
 }
 .hr-posts {
   width: 100px;
