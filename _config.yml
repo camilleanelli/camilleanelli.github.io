@@ -17,30 +17,30 @@ avatar: https://raw.githubusercontent.com/
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble: 
-  email: 
-  facebook: 
-  flickr: 
+  dribbble:
+  email:
+  facebook:
+  flickr:
   github:
-  instagram: 
-  linkedin: 
-  pinterest: 
+  instagram:
+  linkedin:
+  pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: 
+  twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
 # Your disqus shortname, entering this will enable commenting on posts
-disqus: 
+disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: 59051029-1 
+google_analytics: 59051029-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
 url: http://www.camilleanelli.fr
 #url: http://localhost:4000
 
-# If you're hosting your site at a Project repository on GitHub pages 
+# If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
@@ -51,16 +51,16 @@ owner:
   name: Camille Anelli
   avatar: https://avatars2.githubusercontent.com/u/10382549
   bio: "Developpeuse web basée sur Paris"
-  email: 
-  disqus-shortname: 
+  email:
+  disqus-shortname:
   twitter: CamilleAnelli
   google:
     plus: #username
-    analytics: 
-    verify: 
-    ad-client: 
-    ad-slot: 
-  bing-verify: 
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
   github: #username
   stackoverflow: #http://stackoverflow.com/users/123456/username
   linkedin: #username
@@ -85,7 +85,7 @@ sass:
 gems:
   - jemoji # Emoji please!
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-
+  - jekyll-gist 
 # Exclude these files from your production _site
 exclude:
     - Gemfile
