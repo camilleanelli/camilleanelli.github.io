@@ -6,27 +6,29 @@
   {% include _head.html %}
 
   </head>
-<body class="homepage">
 
-<section id=header class="home-header">
-  <div class="row">
-    <div class="col-md-4">
-      <p class="name">Camille Anelli</p>
+
+<body class="homepage">
+<div class="container-height">
+  <section id=header class="home-header">
+    <div class="row">
+      <div class="col-md-4">
+        <p class="name">Camille Anelli</p>
+      </div>
+      <div class="hidden-xs col-md-4"></div>
+        <div class="col-md-4">
+          <ul class="home-nav">
+            <li><a href="mailto:camilleanelli32@gmail.com">Contact</a></li>
+            <li><a href="http://alumni.lewagon.org/camilleanelli" target="_blank">Portfolio</a></li>
+            <li><a href="#posts">Articles</a></li>
+            <li><a href="#footer">Links</a></li>
+          </ul>
+        </div>
+     </div>
+    <div class="hidden-xs row text-center photo-header">
+      <div class="moi"><img src="images/camilleee.jpg" class="photo" alt="photo"/></div>
+      <h1 class="title">Web developer from Paris</h1>
     </div>
-    <div class="hidden-xs col-md-4"></div>
-    <div class="col-md-4">
-      <ul class="home-nav">
-        <li><a href="mailto:camilleanelli32@gmail.com">Contact</a></li>
-        <li><a href="http://alumni.lewagon.org/camilleanelli" target="_blank">Portfolio</a></li>
-        <li><a href="#posts">Articles</a></li>
-        <li><a href="#footer">Links</a></li>
-      </ul>
-    </div>
-   </div>
-  <div class="hidden-xs row text-center photo-header">
-    <div class="moi"><img src="images/camilleee.jpg" class="photo" alt="photo"/></div>
-    <h1 class="title">Web developer from Paris</h1>
-  </div>
 </section>
 
 <section id="posts">
@@ -43,36 +45,36 @@
   {% endfor %}
 </section>
 <div class="mini-space"></div>
+</div>
+
 <section id="footer">
   <div class="links"></div>
-  <ul class="links">
+  <ul class="links links-phone">
     <li><a href="https://fr.linkedin.com/in/camilleanelli" target="_blank"><i class="fa fa-linkedin-square fa-4x"></i></a></li>
     <li><a href="mailto:camilleanelli32@gmail.com" target="_blank"><i class="fa fa-envelope fa-4x"></i></a></li>
     <li><a href="https://github.com/camilleanelli" target="_blank"><i class="fa fa-github fa-4x"></i></a></li>
-    <li><a class="twitter-share-button"
-      href="https://twitter.com/share"
-      data-size="large"
-      data-url="https://dev.twitter.com/web/tweet-button"
-      data-via="CamilleAnelli"
-      data-related="twitterapi,twitter"
-      data-text="www.camilleanelli.fr">
-      <i class="fa fa-twitter fa-4x"></i>
-      </a></li>
-  </ul>
-  <div class="links"></div>
-</section>
+    <li>
+      <a class="twitter-share-button"
+            href="https://twitter.com/share"
+            data-size="large"
+            data-url="https://dev.twitter.com/web/tweet-button"
+            data-via="CamilleAnelli"
+            data-related="twitterapi,twitter"
+            data-text="www.camilleanelli.fr">
+            <i class="fa fa-twitter fa-4x"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="links"></div>
+    </section>
 
-<footer>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}.</footer>
+    <footer>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}.</footer>
 
-{% include analytics.html %}
+    {% include analytics.html %}
 
-<div>
- {% include _footer.html %}
-</div>
+    <div>
+     {% include _footer.html %}
+    </div>
 
-<script>
-
-
-</script>
   </body>
 </html>
