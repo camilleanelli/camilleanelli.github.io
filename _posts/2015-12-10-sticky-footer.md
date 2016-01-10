@@ -3,12 +3,10 @@ layout: article
 title: Sticky footer, the different solutions
 ---
 
-## . ##
-
 When I began to work on design of websites , I  had problem with the position of my footer. Indeed, on some pages, the footer can be on the middle of the page, instead of the bottom.
 
+![footer](/images/footer.png)
 
-![footer](/images/footer.png)  
 
 The solutions that I learned are very simple.
 
@@ -26,7 +24,7 @@ The solutions that I learned are very simple.
 
   So, in my css I add:
 
-  ![footer](/images/boncode2.png)
+  {% gist camilleanelli/7d8f6e832bbf2c1351f9 %}
 
   100vh represent the min-height of the container.
 
@@ -43,12 +41,12 @@ The solutions that I learned are very simple.
 
   In my css, on the container, I add this code:
 
-  ![css](/images/article3.png)
+  {% gist camilleanelli/133cf7791e8fa28d412e %}
 
 
   Then I can apply the flex property for each row(sections, or div), within the container:
 
-  ![css](/images/sticky-footer.png)
+  {% gist camilleanelli/27dbeaf7932f80acd673 %}
 
   The flex property with value 1, will divide the entire space between the elements and push the footer to the bottom.
   As in the first solution, we can avoid the footer too down, by using the calc() value, in the min-height property.
