@@ -158,8 +158,12 @@ section posts
 
 .spacer {
   height: 100px;
+
 }
 
+footer {
+  background-color: grey;
+}
 .hr-posts {
   width: 100px;
   border: 2px solid gray;
@@ -245,6 +249,10 @@ layout article.html
 .grey {
   min-height: 100vh;
   background-color: #DADFE1;
+}
+
+.tweet a:hover {
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
