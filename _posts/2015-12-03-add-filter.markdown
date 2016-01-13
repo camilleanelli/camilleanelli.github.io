@@ -7,11 +7,20 @@ categories: jekyll update
 
 I’m not ashamed to tell that I spend so many times to find a solution with this filter, because when I gave an opacity to it, every child elements had the same opacity, so that’s why I would like to right this, even it is simple for lot of people:
 
-###In your html:
-![Text editor](/images/filterhtml.png)
+###In my html:
 
-###In your CSS:
+{% gist camilleanelli/2c5c6db8613afa035ef7 %}
+
+###In my CSS:
 ![Text editor](/images/filtercss.png)
 
+=> If I don’t give a position like __absolute, relative or fixed__, to the element, the z-index property will not work.
 
-=> So the opacity between the curly braces of rgba color value, is necessary to apply it only to the filter. I hope it will help you.
+=> All elements have the __z-index value of 0__ by default.
+
+=> The element that has __the largest value of z-index__, will be positioned above the others.
+
+=> In the __.filter element__ , I add the value of 0,5 inside curly braces of __rgba value__, because I don't want to apply the opacity to the child elements, like the title for example.
+
+
+I hope it will help you.
