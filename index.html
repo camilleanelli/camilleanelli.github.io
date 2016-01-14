@@ -10,8 +10,9 @@
 
 <body class="homepage">
 <div class="container-height">
+
   <section id=header class="home-header">
-    <div class="row">
+    <div class="row nav-bar">
       <div class="col-md-4">
         <p class="name">Camille Anelli</p>
       </div>
@@ -25,24 +26,43 @@
           </ul>
         </div>
      </div>
-    <div class="hidden-xs row text-center photo-header">
-      <div class="moi"><img src="images/camilleee.jpg" class="photo" alt="photo"/></div>
-      <h1 class="title">Web developer from Paris</h1>
-    </div>
+
+      <div class="hidden-xs moi text-center">
+        <img src="images/camilleee.jpg" class="photo" alt="photo"/>
+        <h1 class="title">Web developer from Paris</h1>
+      </div>
+
 </section>
 
-<section id="posts">
-  <h1 class="title-section"><i class="fa fa-pencil"></i>Articles</h1>
+<section class="icones text-center">
+  <img src="images/js.svg" class="size-icon" alt="">
+  <img src="images/ruby on rails.svg" class="size-icon" alt="">
+  <img src="images/css.svg" class="size-icon" alt="">
+</section>
 
-  {% for post in site.posts %}
+<section id="posts" class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 text-left">
+      <h1 class="title-section"><i class="fa fa-pencil"></i>Articles</h1>
 
-    <div class="card-post text-center">
-      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-      <p class="date">{{ post.date |  date: '%d/%m/%Y'}}<p>
-    </div>
+        {% for post in site.posts %}
 
-    <hr class="hr-posts">
-  {% endfor %}
+        <div class="card-post">
+          <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+          <p class="date">{{ post.date |  date: '%d/%m/%Y'}}<p>
+        </div>
+
+
+        {% endfor %}
+  </div>
+  <div class="col-xs-12 col-sm-6 text-right">
+    <h1 class="portfolio-h1"><img src="images/portfolio.svg" style="width:50px;height:30px"></i>Portfolio</h1>
+    <h4><a href="#">SyndicLib (startup en construction)</a></h4>
+    <h4><a href="http://lebaobazart.fr/"><h4>Le Baobaz'art</a></h4>
+    <a href="https://boxchef.herokuapp.com/"><h4>La box du Chef (Projet web du Wagon) version heroku, car le site n'est plus en ligne actuellement.</h4></a>
+
+  </div>
+</div>
 </section>
 <div class="mini-space">
 
