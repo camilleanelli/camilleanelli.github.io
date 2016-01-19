@@ -13,7 +13,8 @@ body {
 }
 
 .home-header {
-  background: rgba(224, 130, 131, 1);
+  /*background: rgba(224, 130, 131, 1);*/
+  background-color: #4ECDC4;
   height: 500px;
   /*display: flex;
   flex-direction: column;
@@ -114,8 +115,12 @@ section posts
   align-content: flex-start;
 }
 
+.card-post a {
+  color: #2C3E50;
+}
 .card-post a:hover {
   text-decoration: none;
+
 }
 
 #posts h1 {
@@ -155,8 +160,9 @@ section posts
 
 
 .links li a {
-  color: rgba(224, 130, 131, 1);
+  /*color: rgba(224, 130, 131, 1);*/
   /*flex: 1;*/
+  color: #4ECDC4;
 }
 
 .spacer {
@@ -188,7 +194,7 @@ footer {
 layout article.html
 *******/
 .title-article {
-  color: black;
+  color: black ;
   text-decoration: none;
   margin-bottom: 100px;
 }
@@ -204,7 +210,7 @@ layout article.html
 }
 
 .content-xs {
-  background-color:  rgba(224, 130, 131, 1);
+  background-color: #4ECDC4;
   color: white;
   font-family: 'Lobster', cursive;
 }
@@ -216,7 +222,8 @@ layout article.html
   font-size: 18px;
 }
 .nav-article {
-  background: rgba(224, 130, 131, 1);
+  /*background: rgba(224, 130, 131, 1);*/
+  background: #4ECDC4;
   min-height: 100vh;
   font-family: 'Lobster', cursive;
   color: white;
