@@ -10,40 +10,54 @@
 
 <body class="homepage">
 <div class="container-height">
-  <section id=header class="home-header">
-    <div class="row">
+
+  <section id=header class="home-header col-sx-12">
+    <nav class="container-fluid nav-bar">
       <div class="col-md-4">
         <p class="name">Camille Anelli</p>
       </div>
       <div class="hidden-xs col-md-4"></div>
-        <div class="col-md-4">
-          <ul class="home-nav">
-            <li><a href="mailto:camilleanelli32@gmail.com">Contact</a></li>
-            <li><a href="http://alumni.lewagon.org/camilleanelli" target="_blank">Portfolio</a></li>
-            <li><a href="#posts">Articles</a></li>
-            <li><a href="#footer">Links</a></li>
-          </ul>
+      <div class="col-md-4">
+        <ul class="home-nav">
+          <li><a href="mailto:camilleanelli32@gmail.com">Contact</a></li>
+          <li><a href="http://alumni.lewagon.org/camilleanelli" target="_blank">Portfolio</a></li>
+          <li><a href="#posts">Articles</a></li>
+          <li><a href="#footer">Links</a></li>
+        </ul>
+      </div>
+    </nav>
+
+      <div class="hidden-xs moi text-center">
+        <img src="images/camilleee.jpg" class="photo" alt="photo"/>
+        <h1 class="title">Web developer from Paris</h1>
+      </div>
+
+
+
+</section>
+
+<!-- <section class="icones text-center">
+  <img src="images/js.svg" class="size-icon" alt="">
+  <img src="images/ruby on rails.svg" class="size-icon" alt="">
+  <img src="images/css.svg" class="size-icon" alt="">
+</section> -->
+
+<section id="posts" class="container">
+  <div class="row text-center">
+
+      <h1 class="title-section"><i class="fa fa-pencil"></i>Articles</h1>
+
+        {% for post in site.posts %}
+
+        <div class="card-post">
+          <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+          <p class="date">{{ post.date |  date: '%d/%m/%Y'}}<p>
         </div>
-     </div>
-    <div class="hidden-xs row text-center photo-header">
-      <div class="moi"><img src="images/camilleee.jpg" class="photo" alt="photo"/></div>
-      <h1 class="title">Web developer from Paris</h1>
-    </div>
-</section>
 
-<section id="posts">
-  <h1 class="title-section"><i class="fa fa-pencil"></i>Articles</h1>
 
-  {% for post in site.posts %}
-
-    <div class="card-post text-center">
-      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-      <p class="date">{{ post.date |  date: '%d/%m/%Y'}}<p>
-    </div>
-
-    <hr class="hr-posts">
-  {% endfor %}
-</section>
+        {% endfor %}
+  </div>
+  </section>
 <div class="mini-space">
 
 </div>

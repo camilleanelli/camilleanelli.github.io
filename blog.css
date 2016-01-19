@@ -2,27 +2,44 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  min-height: 100vh;
-  display: flex;
+  padding: 0px;
+  /*min-height: 100vh;*/
+  /*display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: wrap;*/
 }
 
+body a:hover {
+  text-decoration: none;
+}
 .container-height {
   min-height: calc(100vh - 500px);
 }
 
 .home-header {
-  background: rgba(224, 130, 131, 1);
+  /*background: rgba(224, 130, 131, 1);*/
+  background-color: #4ECDC4;
   height: 500px;
+  padding-left: 0px;
+
+  position: relative;
+
+  /*z-index: 1;*/
   /*display: flex;
   flex-direction: column;
   justify-content: center;*/
 }
 
-.photo-header {
-  margin-top: 150px;
+.nav-bar {
+  width: 100%;
+  position: fixed;
+  background-color: #2C3E50;
+  z-index: 2;
 }
+.photo-header {
+  /*margin-top: 200px;*/
+}
+
 h1 {
   font-family: 'Lobster', cursive;
   text-align: center;
@@ -39,14 +56,20 @@ h1 {
 }
 
 .name {
-  flex: 1;
-  width: 50%;
+  margin-top: 10px;
   color: white;
   font-size: 25px;
   font-family: 'Lobster', cursive;
   margin-left: 10px;
 }
 
+.name a {
+  color: white;
+}
+
+.name a:hover {
+  color: grey;
+}
 .title {
   color: white;
   font-family: 'Lobster', cursive;
@@ -65,6 +88,15 @@ h1 {
   justify-content: space-around;
 }
 
+.moi {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  }
+
+.home-nav {
+  padding-top: 10px;
+}
 .home-nav li a {
   color: white;
   font-family: 'Lobster', cursive;
@@ -72,7 +104,6 @@ h1 {
 }
 
 .home-nav li a:hover {
-  text-decoration: none;
   color: grey;
 }
 
@@ -99,12 +130,27 @@ h1 {
   margin-top: 30px;
 }
 
+/*******
+section icones
+******/
 
+.size-icon {
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+
+}
+
+.size-icon:hover {
+  transform: rotate(90deg);
+  transition: 1s;
+}
 /*******
 section posts
 ******/
 
 #posts {
+
   flex: 1;
   padding-top: 20px;
   font-family: sans-serif;
@@ -112,21 +158,41 @@ section posts
   display: flex;
   flex-direction: column;
   align-content: flex-start;
+  height: 500px;
+}
+
+
+.title-section {
+  margin-bottom: 20px;
+}
+
+.card-post a {
+  color: #2C3E50;
 }
 
 .card-post a:hover {
   text-decoration: none;
 }
 
+.portfolio-h1 {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+
+/*.card-post a:hover {
+  text-decoration: none;
+}*/
+
+.pictures {
+  height: 300px;
+  background-image: url("../images/boxchef.png");
+}
 #posts h1 {
   font-family: 'Lobster', cursive;
 }
 
 
-.moi {
-  margin: auto;
-  margin-bottom: 20px;
-}
 
 .photo {
   height: 180px;
@@ -140,7 +206,7 @@ section posts
   height: 200px;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: grey;
+  background-color: #2C3E50;
 
 
 }
@@ -155,8 +221,7 @@ section posts
 
 
 .links li a {
-  color: rgba(224, 130, 131, 1);
-  /*flex: 1;*/
+  color: #4ECDC4;
 }
 
 .spacer {
@@ -164,10 +229,6 @@ section posts
 
 }
 
-footer {
-  background-color: grey;
-
-}
 .hr-posts {
   width: 100px;
   border: 2px solid gray;
@@ -187,15 +248,23 @@ footer {
 /*******
 layout article.html
 *******/
+
+.post {
+  margin-top: 100px;
+}
+
 .title-article {
-  color: black;
-  text-decoration: none;
   margin-bottom: 100px;
 }
 
+.title-article a {
+  color: #2C3E50;
+  text-decoration: none;
+  }
+
 .title-article a:hover {
   color: grey;
-  text-decoration: none;
+  /*text-decoration: none;*/
 }
 .content {
  background-color: #DADFE1;
@@ -204,7 +273,7 @@ layout article.html
 }
 
 .content-xs {
-  background-color:  rgba(224, 130, 131, 1);
+  background-color: #4ECDC4;
   color: white;
   font-family: 'Lobster', cursive;
 }
@@ -212,11 +281,12 @@ layout article.html
 .content-xs a,
 .content-xs a:hover {
   color: white;
-  text-decoration: none;
+  /*text-decoration: none;*/
   font-size: 18px;
 }
 .nav-article {
-  background: rgba(224, 130, 131, 1);
+  /*background: rgba(224, 130, 131, 1);*/
+  background: #4ECDC4;
   min-height: 100vh;
   font-family: 'Lobster', cursive;
   color: white;
@@ -238,7 +308,7 @@ layout article.html
 }
 
 .nav-article ul li a:hover {
-  text-decoration: none;
+  /*text-decoration: none;*/
   color: white;
 }
 .photo-article {
@@ -257,7 +327,7 @@ layout article.html
 }
 
 .tweet a:hover {
-  text-decoration: none;
+  /*text-decoration: none;*/
 }
 
 @media (max-width: 768px) {
@@ -266,6 +336,9 @@ layout article.html
   }
   .home-header {
     height: 100px;
+  }
+  .size-icon {
+    margin: 10px;
   }
 #footer {
     height: 100px;
