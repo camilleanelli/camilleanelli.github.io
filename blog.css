@@ -94,6 +94,7 @@ h1 {
   left: 40%;
   }
 
+
 .home-nav {
   padding-top: 10px;
 }
@@ -222,6 +223,10 @@ section posts
 
 .links li a {
   color: #4ECDC4;
+}
+
+.links li:hover {
+  transform: scale(1.2);
 }
 
 .spacer {
