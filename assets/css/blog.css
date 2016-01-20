@@ -201,6 +201,11 @@ section posts
 /*******
 layout article.html
 *******/
+
+img {
+  width: 100%;
+  margin: 30px auto;
+}
 .post {
   margin-top: 100px; }
 
