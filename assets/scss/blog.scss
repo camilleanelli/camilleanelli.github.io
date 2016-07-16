@@ -9,9 +9,11 @@ body {
   flex-wrap: wrap;*/
 }
 
+
 body a:hover {
   text-decoration: none;
 }
+
 .container-height {
   min-height: calc(100vh - 500px);
 }
@@ -21,7 +23,6 @@ body a:hover {
   background-color: #4ECDC4;
   height: 500px;
   padding-left: 0px;
-
   position: relative;
 
   /*z-index: 1;*/
@@ -70,16 +71,16 @@ h1 {
 .name a:hover {
   color: grey;
 }
+
 .title {
   color: white;
   font-family: 'Lobster', cursive;
 }
 
-
-
 .space-middle {
   flex: 1;
 }
+
 .home-nav{
   flex: 1;
   display: flex;
@@ -113,7 +114,6 @@ h1 {
   font-family: sans-serif;
   color: #22313F;
   font-size: 18px;
-
 }
 
 .article-wrap h4 {
