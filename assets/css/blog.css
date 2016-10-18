@@ -8,6 +8,10 @@ body {
   flex-direction: column;
   flex-wrap: wrap;*/ }
 
+b {
+    height: 500px;
+  }
+
 body a:hover {
   text-decoration: none; }
 
@@ -130,7 +134,7 @@ section posts
   display: flex;
   flex-direction: column;
   align-content: flex-start;
-  height: 500px; }
+   }
 
 .title-section {
   margin-bottom: 20px; }
