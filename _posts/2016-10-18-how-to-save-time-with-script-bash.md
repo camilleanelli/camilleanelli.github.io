@@ -27,7 +27,7 @@ Here the basic configuration I made :
 
 {% gist camilleanelli/99ef426691c3c9a69a4af6eaf6e1fc0e %}
 
-####3) Test the script by running it inside the /bin folder :####
+#### 3) Test the script by running it inside the /bin folder : ####
 
 ```➜  bin git: ./name_of_the_file.sh```
 
