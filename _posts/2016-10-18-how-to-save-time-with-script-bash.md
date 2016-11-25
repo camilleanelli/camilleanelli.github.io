@@ -5,10 +5,12 @@ title: How to save time with shell scripts?
 
 In a rails project, I had to repeat the same steps very frequently, for example :
 
-```gco master
+```
+gco master
 ```
 
-```git pull
+```
+git pull
 ```
 
 It was boring because I often forget some important steps for my project.
@@ -19,9 +21,13 @@ Here the basic configuration I made :
 
 #### 1) Create a file.sh, inside the folder /bin, and add a line in the top of the page: ####
 
-```cd bin```
+```
+cd bin
+```
 
-```➜  bin git: touch name_of_the_file.sh```
+```
+➜  bin git: touch name_of_the_file.sh
+```
 
 #### 2) Inside the file, I write the command line LS to see all files inside /bin: ####
 
@@ -29,11 +35,15 @@ Here the basic configuration I made :
 
 #### 3) Test the script by running it inside the /bin folder : ####
 
-```➜  bin git: ./name_of_the_file.sh```
+```
+➜  bin git: ./name_of_the_file.sh
+```
 
 Unfortunately, we can see the file is not executable. To resolve it, run the command :
 
-```chmod +x name_of_the_file.sh```
+```
+chmod +x name_of_the_file.sh
+```
 
 #### 4) Great ! Add command lines you want to run, inside your shell file, for example : ####
 
@@ -41,7 +51,9 @@ Unfortunately, we can see the file is not executable. To resolve it, run the com
 
 #### 5) Execute the file with this syntax : ####
 
-```./bin/name_of_your_file.sh```
+```
+./bin/name_of_your_file.sh
+```
 
 ***
 
