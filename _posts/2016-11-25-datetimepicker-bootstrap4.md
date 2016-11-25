@@ -19,8 +19,8 @@ Here, is what I did to install it :
 Install moment for the format of dates.
 
 #### In your Gemfile : ####
-``
-gem 'momentjs-rails', '>= 2.9.0'
+```
+gem 'momentjs-rails', '>= 2.9.0
 ```
 
 #### In application.js : ####
