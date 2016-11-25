@@ -306,9 +306,9 @@ img {
     }
 
   #footer  {
-    font-size: 20px;
+    font-size: 30px;
     padding-top: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 
    }
    #footer-articles {
@@ -318,7 +318,7 @@ img {
    }
 
   .links-phone {
-    flex-grow: 6 ; 
+    flex-grow: 6 ;
     }
   }
 
