@@ -28,7 +28,7 @@ $(function(config) {
 
   // Toggle result page
   function showResults() {
-    window.scroll(0, 0);
+    // window.scroll(0, 0);
     $initialContent.addClass('algolia__initial-content--hidden');
     $searchContent.addClass('algolia__search-content--active');
 
@@ -83,7 +83,7 @@ $(function(config) {
     var target = $('.page,.post').find(selector);
     var targetOffset = target[0].getBoundingClientRect().top + window.pageYOffset - 20;
     window.setTimeout(function() {
-      window.scroll(0, targetOffset);
+      // window.scroll(0, targetOffset);
     }, 100);
   }
 
@@ -95,17 +95,17 @@ $(function(config) {
     }
     // Scrolling to a result on the same page
     hideResults();
-    scrollPageToSelector(selector);
+    // scrollPageToSelector(selector);
     event.preventDefault();
     return false;
   }
 
-  window.setTimeout(function() {
-    var selector = getAnchorSelector(window.location.hash);
-    if (selector) {
-      scrollPageToSelector(selector);
-    }
-  }, 100);
+  // window.setTimeout(function() {
+  //   var selector = getAnchorSelector(window.location.hash);
+  //   if (selector) {
+  //     scrollPageToSelector(selector);
+  //   }
+  // }, 100);
 
 
 }(window.ALGOLIA_CONFIG));
