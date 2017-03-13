@@ -73,10 +73,13 @@ highlighter: rouge
 permalink: /:title/
 
 # The release of Jekyll Now that you're using
-version: v1.0.0
+version: v3.0.1
 
 
-
+algolia:
+  application_id: 'Y5ZB63B99X'
+  index_name:     'jekyll-blog'
+  read_only_api_key: '02de0a1baeb572403b7ca3ae5fbd126c'
 # Set the Sass partials directory, as we're using @imports
 sass:
   sass_dir: _sass
@@ -84,9 +87,11 @@ sass:
 
 # Use the following plug-ins
 gems:
+  - algoliasearch-jekyll
   - jemoji # Emoji please!
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-gist
+
 
   # gist:
   # noscript: false
@@ -94,7 +99,7 @@ gems:
 
 
 exclude:
-    - Gemfile
-    - Gemfile.lock
+    # - Gemfile
+    # - Gemfile.lock
     - LICENSE
     - README.md

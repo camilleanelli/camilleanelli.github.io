@@ -1,6 +1,52 @@
+<footer id="footer">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2"> 
+      <div class="links"></div>
+      <ul class="links">
+        <li><a href="https://fr.linkedin.com/in/camilleanelli" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+        <li><a href="mailto:camilleanelli32@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+        <li><a href="https://github.com/camilleanelli" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://twitter.com/CamilleAnelli" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      </ul>
+      <div class="links"></div>
+    </div>
+  </div>
+ <div class="row text-center">&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}.</div>
+ </div>
+</footer>
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="//cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js"></script>
 <script src="{{ site.baseurl }}/assets/javascripts/bootstrap.min.js"></script>
 <script src="{{ site.baseurl }}/assets/javascripts/home.js"></script>
+<script>
+  window.ALGOLIA_CONFIG = {
+    'applicationId': '{{ site.algolia.application_id }}',
+    'indexName': '{{ site.algolia.index_name }}',
+    'apiKey': '{{ site.algolia.read_only_api_key }}',
+    'baseurl': '{{ site.baseurl }}'
+  }
+</script>
+<script id="algolia__template" type="text/template">
+{% raw %}
+  <div class="algolia__result">
+    <a class="algolia__result-link" href="{{ full_url }}#algolia:{{ css_selector }}">{{{ _highlightResult.title.value }}}</a>
+    {{#posted_at}}
+    <div class="algolia__result-date">{{ posted_at_readable }}</div>
+    {{/posted_at}}
+    <div class="algolia__result-text">{{{ _highlightResult.text.value }}}</div>
+  </div>
+{% endraw %}
+</script>
+<script id="algolia__template--no-results" type="text/template">
+  No results found.
+</script>
+  
+<script src="//cdn.jsdelivr.net/algoliasearch/3.6.0/algoliasearch.min.js"></script>
+<script src="//cdn.jsdelivr.net/algoliasearch.helper/2.1.0/algoliasearch.helper.min.js"></script>
+<script src="//cdn.jsdelivr.net/hogan.js/3.0.2/hogan.min.js"></script>
+<script src="//cdn.jsdelivr.net/momentjs/2.10.3/moment.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/algolia.js"></script>

@@ -7,10 +7,7 @@
 
   </head>
 
-
-<body class="homepage">
-<div class="container-height">
-
+<body>
   <section id=header class="home-header col-sx-12">
     <nav class="container-fluid nav-bar slideDown">
       <div class="col-md-4">
@@ -19,71 +16,114 @@
       <div class="hidden-xs col-md-4"></div>
       <div class="col-md-4">
         <ul class="home-nav">
-          <!-- ajouter portefolio   -->
-          <li><a href="#about">About</a></li>
+          <!-- ajouter about  -->
           <li><a href="#posts">Articles</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#footer">Contact</a></li>
         </ul>
       </div>
     </nav>
 
-      <div class="hidden-xs moi text-center">
-        <img src="images/camilleee.jpg" class="photo" alt="photo"/>
-        <h1 class="title">Freelance Web developer</h1>
+    <div class="hidden-xs moi text-center">
+      <img src="images/camilleee.jpg" class="photo" alt="photo"/>
+      <h1 class="title">Freelance Web developer</h1>
+      <br>
+      <br>
+      <div>
+        <a href="#posts">
+          <i class="fa fa-arrow-circle-o-down fa-5x" aria-hidden="true"></i> 
+        </a>
       </div>
-
-
-
+    </div>
 </section>
 
-<!-- <section class="icones text-center">
-  <img src="images/js.svg" class="size-icon" alt="">
-  <img src="images/ruby on rails.svg" class="size-icon" alt="">
-  <img src="images/css.svg" class="size-icon" alt="">
-</section> -->
 
-<section id="posts" class="container">
+<section id="posts">
+<div id="search" class="container">
   <div class="row text-center">
-
-      <h1 class="title-section"><i class="fa fa-pencil"></i>Articles</h1>
-
-        {% for post in site.posts %}
-
-        <div class="card-post">
-          <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-          <p class="date">{{ post.date |  date: '%d/%m/%Y'}}<p>
-        </div>
-
-
-        {% endfor %}
+    <h1 class="title-section"><i class="fa fa-pencil"></i>Articles</h1>
+    <input type="text" class="algolia__input js-algolia__input" autocomplete="off" name="query" placeholder="Search an article" />
+    <div class="algolia__search-content js-algolia__search-content">
+      <h1 class="page-title">Search</h1>
+      <div class="posts algolia__results"></div>
+    </div>
   </div>
-  </section>
-  <div class="mini-space"></div>
 </div>
 
-<section id="about">
+  <div class="container">
+    <div class="row text-center">
+     <div class="algolia__initial-content js-algolia__initial-content">
+      <div class="posts">
+        {% for post in site.posts %}
+          <div class="col-sm-4 padding-boxe">
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            <div class="card-post">
+              <h3 class="post-title">
+                
+                   {{ post.title }}
+               
+              </h3>
+              <span class="post-date">{{ post.date | date_to_string }}</span>
+            </div>
+           </a>
+          </div>
+         
+          
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
 
 </section>
+        
+<div class="mini-space"></div>
 
-<section id="footer">
-  <div class="links"></div>
-  <ul class="links links-phone">
-    <li><a href="https://fr.linkedin.com/in/camilleanelli" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
-    <li><a href="mailto:camilleanelli32@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
-    <li><a href="https://github.com/camilleanelli" target="_blank"><i class="fa fa-github"></i></a></li>
-    <li><a href="https://twitter.com/CamilleAnelli" target="_blank"><i class="fa fa-twitter"></i></a></li>
-      </ul>
-      <div class="links"></div>
+<section id="projects">
 
-    </section>
-<footer class="text-center">&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}.</footer>
-
-
-    {% include analytics.html %}
-
-    <div>
-     {% include _footer.html %}
+  <div class="container">
+    <div class="row">
+      <h1 class="title-section">Projects</h1>
     </div>
-
+    <div class="row">
+    <a href="http://www.syndiclib.fr/">
+       <div class="col-sm-4 card-project one">
+      <div class="filter text-center">
+        <i class="fa fa-search-plus fa-5x" aria-hidden="true"></i>
+      </div>
+    </div>
+    </a>
+    <a href="http://lebaobazart.fr/">
+      <div class="col-sm-4 card-project two">
+      <div class="filter text-center">
+        <i class="fa fa-search-plus fa-5x" aria-hidden="true"></i>
+      </div>
+    </div>
+  </a>
+   <a href="http://www.nomadsteps.com/">
+     <div class="col-sm-4 card-project three">
+      <div class="filter text-center">
+       <i class="fa fa-search-plus fa-5x" aria-hidden="true"></i>
+      </div>
+    </div>
+   </a>
+    
+  </div>
+</div>
+</section>
+  
+    {% include _footer.html %}
+  
+    {% include analytics.html %}
+<!--   <script type="text/javascript">
+      $(document).ready(function() {
+        $(".filter").hover(function(){
+          $(this).hide();
+          })
+        $(".filter").on("mouseleave", function(){
+          $(this).show();
+          })
+      });
+    </script> -->
   </body>
 </html>
