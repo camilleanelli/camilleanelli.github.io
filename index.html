@@ -59,21 +59,17 @@
           <a href="{{ site.baseurl }}{{ post.url }}">
             <div class="card-post">
               <h3 class="post-title">
-                
-                   {{ post.title }}
-               
+                {{ post.title }}
               </h3>
               <span class="post-date">{{ post.date | date_to_string }}</span>
             </div>
-           </a>
+          </a>
           </div>
-         
-          
-        {% endfor %}
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 </section>
         
@@ -112,9 +108,9 @@
 </div>
 </section>
   
-    {% include _footer.html %}
+{% include _footer.html %}
   
-    {% include analytics.html %}
+{% include analytics.html %}
 <!--   <script type="text/javascript">
       $(document).ready(function() {
         $(".filter").hover(function(){
