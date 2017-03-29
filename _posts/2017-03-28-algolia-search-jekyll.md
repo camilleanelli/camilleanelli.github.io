@@ -90,7 +90,7 @@ Dans mon cas j'ai souhaité mettre la search bar directement sur la page index e
 
 	[_includes/sidebar.html](https://github.com/algolia/algoliasearch-jekyll-hyde/blob/master/_includes/sidebar.html)
 
-5. Recupérer le contenue du layout default.html, et remplacer le {{ content }} par la ligne de code < input > recupérée dans la _sidebar.html.
+5. Recupérer le contenue du layout default.html, et remplacer le content par la ligne de code < input > recupérée dans la _sidebar.html.
 
 	{% gist camilleanelli/103696d3d32118ff20fd6301ea84dda6 %}
 	

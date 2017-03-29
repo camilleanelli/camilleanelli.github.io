@@ -547,6 +547,11 @@ li {
   margin-bottom: 30px;
 }
 
+.li-nav {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
 .home-header {
   /*background: rgba(224, 130, 131, 1);*/
   background-color: #4ECDC4;
