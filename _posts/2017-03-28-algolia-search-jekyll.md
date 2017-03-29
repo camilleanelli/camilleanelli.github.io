@@ -86,13 +86,13 @@ Dans mon cas j'ai souhaité mettre la search bar directement sur la page index e
 
 	[_includes/footer.html](https://github.com/algolia/algoliasearch-jekyll-hyde/blob/master/_includes/footer.html).
 
-4. Récupèrer la balise < input > incluse dans _includes/sidebar.html du projet hyde theme.
-
-	[_includes/sidebar.html](https://github.com/algolia/algoliasearch-jekyll-hyde/blob/master/_includes/sidebar.html)
-
-5. Recupérer le contenue du layout default.html, et remplacer le content par la ligne de code < input > recupérée dans la _sidebar.html.
+4. On récupèrer la balise < input > du fichier _includes/sidebar.html du projet hyde theme, qu'on place à l'endroit désiré.
 
 	{% gist camilleanelli/103696d3d32118ff20fd6301ea84dda6 %}
+
+5. Recupérer le contenue du layout default.html, et remplacer le content par notre propre code qui est censé affiché les articles sur la page index
+
+	{% gist camilleanelli/661d7c112d7132181ce0a9e55184e41d %}
 	
 
 	Maintenant nous pouvons intervenir dans le css, et même le js pour modifier le design de la search. Par exemple, supprimer le scroll qui fait bouger la page vers le haut lors de la validation de la search, arrondir la forme de l'input.
