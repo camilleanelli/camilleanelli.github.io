@@ -19,7 +19,7 @@ Je vais donc vous expliquer les différentes étapes que j'ai effectué pour ins
 	Cliquer sur le lien "indice" à gauche de l'écran.
 
 	Cliquer sur "new index" en haut à droite de la page.
-	![index](/images/indexAlg.png)
+	![index](/images/index-alg.png)
 
 ### Indexation des données ###
 
