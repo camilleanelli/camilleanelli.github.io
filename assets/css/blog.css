@@ -317,19 +317,19 @@
   color: #999; }
 
 /*
- *  __                  __
- * /\ \                /\ \
- * \ \ \___   __  __   \_\ \     __
- *  \ \  _ `\/\ \/\ \  /'_` \  /'__`\
- *   \ \ \ \ \ \ \_\ \/\ \_\ \/\  __/
- *    \ \_\ \_\/`____ \ \___,_\ \____\
- *     \/_/\/_/`/___/> \/__,_ /\/____/
- *                /\___/
- *                \/__/
- *
- * Designed, built, and released under MIT license by @mdo. Learn more at
- * https://github.com/poole/hyde.
- */
+*  __                  __
+* /\ \                /\ \
+* \ \ \___   __  __   \_\ \     __
+*  \ \  _ `\/\ \/\ \  /'_` \  /'__`\
+*   \ \ \ \ \ \ \_\ \/\ \_\ \/\  __/
+*    \ \_\ \_\/`____ \ \___,_\ \____\
+*     \/_/\/_/`/___/> \/__,_ /\/____/
+*                /\___/
+*                \/__/
+*
+* Designed, built, and released under MIT license by @mdo. Learn more at
+* https://github.com/poole/hyde.
+*/
 /*
  * Contents
  *
@@ -521,6 +521,9 @@ a.sidebar-nav-item:focus {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box; }
 
+img {
+  width: 80%; }
+
 body {
   padding: 0px; }
 
@@ -537,20 +540,6 @@ b {
 
 body a:hover {
   text-decoration: none; }
-
-img {
-  margin: 30px;
-}
-
-li {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.li-nav {
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
 
 .home-header {
   /*background: rgba(224, 130, 131, 1);*/
@@ -713,6 +702,9 @@ h1 {
 
 .three {
   background-image: url("https://res.cloudinary.com/dp8fx5icp/image/upload/c_scale,w_400/v1489380842/nomadstepss_t7dgiv.png"); }
+
+.four {
+  background-image: url("https://res.cloudinary.com/dp8fx5icp/image/upload/c_scale,w_400/v1495132350/screenshot-big-store.herokuapp.com_2017-05-18_19-25-36_z8ljxm.png"); }
 
 .photo {
   height: 180px;

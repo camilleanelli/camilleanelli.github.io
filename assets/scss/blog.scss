@@ -6,7 +6,7 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  
+
 }
 
 img {
@@ -16,7 +16,7 @@ img {
 body {
 
   padding: 0px;
- 
+
 }
 
 .title-section {
@@ -120,7 +120,7 @@ h1 {
       color: white;
     }
   }
-  
+
   }
 
 
@@ -181,7 +181,7 @@ section posts
 // #posts {
 //   flex: 1;
 //   padding-top: 60px;
-//   font-family: sans-serif;  
+//   font-family: sans-serif;
 // }
 
 
@@ -196,7 +196,7 @@ section posts
   }
   &:hover {
     background-color: #DADFE1;
-  } 
+  }
 }
 
 .card-post a:hover {
@@ -245,21 +245,25 @@ section posts
     }
 
 
-      .one {
-        background-image: url("https://res.cloudinary.com/dp8fx5icp/image/upload/c_scale,w_400/v1489379031/screenshot-www.syndiclib.fr_2017-03-07_19-21-21_wptoyk.png");
+  .one {
+    background-image: url("https://res.cloudinary.com/dp8fx5icp/image/upload/c_scale,w_400/v1489379031/screenshot-www.syndiclib.fr_2017-03-07_19-21-21_wptoyk.png");
 
-      }
+  }
 
-      .two {
-       background-image: url("https://res.cloudinary.com/dp8fx5icp/image/upload/c_scale,w_400/v1489380834/baobazart_zgh7ci.png");
+  .two {
+    background-image: url("https://res.cloudinary.com/dp8fx5icp/image/upload/c_scale,w_400/v1489380834/baobazart_zgh7ci.png");
 
-      }
+  }
 
-      .three {
-      background-image: url("https://res.cloudinary.com/dp8fx5icp/image/upload/c_scale,w_400/v1489380842/nomadstepss_t7dgiv.png");
+  .three {
+    background-image: url("https://res.cloudinary.com/dp8fx5icp/image/upload/c_scale,w_400/v1489380842/nomadstepss_t7dgiv.png");
 
-      }
-      
+  }
+
+  .four {
+    background-image: url("https://res.cloudinary.com/dp8fx5icp/image/upload/c_scale,w_400/v1495132350/screenshot-big-store.herokuapp.com_2017-05-18_19-25-36_z8ljxm.png");
+  }
+
 
 
 
