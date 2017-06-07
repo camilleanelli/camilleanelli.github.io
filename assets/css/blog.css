@@ -4,6 +4,8 @@
   padding: .25rem .5rem;
   border-radius: 100px;
   border: 2px solid #2c3e50; }
+  .algolia__input:focus {
+    outline: none; }
 
 /* Search results container */
 .algolia__initial-content {
@@ -705,6 +707,9 @@ h1 {
 
 .four {
   background-image: url("https://res.cloudinary.com/dp8fx5icp/image/upload/c_scale,w_400/v1495132350/screenshot-big-store.herokuapp.com_2017-05-18_19-25-36_z8ljxm.png"); }
+
+.five {
+  background-image: url("https://res.cloudinary.com/dp8fx5icp/image/upload/c_scale,w_400/v1496833653/lesstweet_d1eupi.png"); }
 
 .photo {
   height: 180px;
