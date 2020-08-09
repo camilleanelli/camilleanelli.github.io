@@ -1,0 +1,59 @@
+I"X	<p>When I began to work on design of websites , I  had problem with the position of my footer. Indeed, on some pages, the footer can be on the middle of the page, instead of the bottom.</p>
+
+<p><img src="/images/footer.png" alt="footer" /></p>
+
+<p>The solutions that I learned are very simple.</p>
+
+<p>##The calc() value:##</p>
+
+<p>In my html, below the header, I have a &lt;div class="container"&gt;&lt;/div&gt; that take every content inside, without the footer.
+  In my css, on this .container, I add the <strong>100vh</strong> value to the <strong>min-height</strong> property. It will take the entire space of the window.</p>
+
+<p>Here I can see the result:</p>
+
+<p><img src="/images/footertropenbas.png" alt="footer" /></p>
+
+<p>Now I have a small problem, the footer doesn’t appear anymore, because it placed too down in the window.
+  That ‘s why the calc() value is very useful. I will subtract the 100vh value - the height of the footer.</p>
+
+<p>So, in my css I add:</p>
+
+<noscript><pre>.container {
+    min-height: calc( 100vh - 100px );
+    }</pre></noscript>
+<script src="https://gist.github.com/camilleanelli/7d8f6e832bbf2c1351f9.js"> </script>
+
+<p>100vh represent the min-height of the container.</p>
+
+<p>100px represent the height of the footer.</p>
+
+<p>Here the result:</p>
+
+<p><img src="/images/bonfooter.png" alt="footer" /></p>
+
+<p>There is another way, if you enjoy using the flex box, it can do the same too.</p>
+
+<p>##The flexbox solution:##</p>
+
+<p>In my css, on the container, I add this code:</p>
+
+<noscript><pre>.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}</pre></noscript>
+<script src="https://gist.github.com/camilleanelli/133cf7791e8fa28d412e.js"> </script>
+
+<p>Then I can apply the flex property for each row(sections, or div), within the container:</p>
+
+<noscript><pre>.row {
+  flex: 1;
+}</pre></noscript>
+<script src="https://gist.github.com/camilleanelli/27dbeaf7932f80acd673.js"> </script>
+
+<p>The flex property with value 1, will divide the entire space between the elements and push the footer to the bottom.
+  As in the first solution, we can avoid the footer too down, by using the calc() value, in the min-height property.</p>
+
+<p>Even if I appreciate using flexbox, it is still not supported by every versions of IE.
+  <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Here the documentation</a></p>
+:ET

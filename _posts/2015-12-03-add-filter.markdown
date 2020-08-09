@@ -1,7 +1,6 @@
 ---
-layout: article
+layout: post
 title:  "How to add a filter with opacity, above a background??"
-date:   2015-12-03 14:57:59 +0100
 categories: jekyll update
 ---
 

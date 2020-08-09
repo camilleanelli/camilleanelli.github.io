@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 title: Ajouter Algolia search sur un thème jekyll
 ---
 

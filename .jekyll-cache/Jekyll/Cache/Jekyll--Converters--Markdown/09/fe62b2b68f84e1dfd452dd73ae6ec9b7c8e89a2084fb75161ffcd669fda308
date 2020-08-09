@@ -1,0 +1,73 @@
+I"<p>It is during a course of programming social network, with an older version of Rails, that I noted it was missing some steps.
+Before starting the install of devise, if you want to make your forms beautiful, (even authentication’s forms)  it is better to install “simple_form”. Indeed, I did it after and it was not working.</p>
+
+<p>=&gt; <a href="https://github.com/plataformatec/simple_form">Here the very simple documentation of simple_form:</a></p>
+
+<p>=&gt; Once simple_form is installed,  I can start my “devise” setup:</p>
+
+<noscript><pre>gem &#39;devise&#39;</pre></noscript>
+<script src="https://gist.github.com/camilleanelli/80774ed2910b550ad4c3d52d80a3a66e.js"> </script>
+
+<p>=&gt; Then I run :</p>
+
+<p><strong>$ bundle install</strong></p>
+
+<p><strong>$ rails generate devise:install</strong></p>
+
+<p>=&gt; Then I have to follow the instructions in the terminal.</p>
+
+<p>=&gt; Don’t forget to add <strong>“before_action :authenticate_user!”</strong> in controllers.  In my project, I did it in “application_controllers.rb”, because all features can’t be accessible without authentication.</p>
+
+<p>=&gt;  Now I can generate the model “User” (but it could be another word it depends on your project):
+<strong>$ rails generate devise User</strong></p>
+
+<p>=&gt; Then I restart the server and find the registration page to the url :  “/users/sign_up .</p>
+
+<p>=&gt; Now I have a model “user” in my project, I would like to add some fields such as : “last_name”, “first_name”, “profile_name” etc… :</p>
+
+<p><strong>$ rails g migration AddFieldsToUsers last_name: string first_name: string profile_name: string</strong></p>
+
+<p><strong>$ rake db:migrate</strong></p>
+
+<p>=&gt; Once the fields are added, I have to add them in my authentication’s forms, for instance, my new session’s form :</p>
+
+<noscript><pre>&lt;h2 class=&quot;text-center&quot;&gt;Sign up&lt;/h2&gt;
+
+&lt;div class=&quot;col-md-6 col-md-offset-3&quot;&gt;
+  &lt;%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %&gt;
+    &lt;%= f.error_notification %&gt;
+
+    &lt;div class=&quot;form-inputs&quot;&gt;
+      &lt;%= f.input :first_name %&gt;
+      &lt;%= f.input :last_name  %&gt;
+      &lt;%= f.input :profile_name %&gt;
+      &lt;%= f.input :email, required: true, autofocus: true %&gt;
+      &lt;%= f.input :password, label: &quot;Mot de passe&quot;, required: true, hint: (&quot;#{@minimum_password_length} characters minimum&quot; if @minimum_password_length) %&gt;
+      &lt;%= f.input :password_confirmation, label: &quot;Confirmer le mot de passe&quot;, required: true %&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;form-actions&quot;&gt;
+      &lt;%= f.button :submit, &quot;Validate&quot; class:&quot;btn btn-primary&quot; %&gt;
+    &lt;/div&gt;
+  &lt;% end %&gt;
+&lt;/div&gt;</pre></noscript>
+<script src="https://gist.github.com/camilleanelli/ab37ea22b6252a42866f8a99c7b88a19.js"> </script>
+
+<p>=&gt; Now I can test my application, but there is a mistake:  the new user that I have just created, is “nil” for the last_name, first_name, and profile_name. The reason is because of missing “strong parameters” in controller’s file, so I write this code in my application_controller.rb :</p>
+
+<noscript><pre>class ApplicationController &lt; ActionController::Base
+  before_action :configure_permitted_parameters, if: :devise_controller?
+
+   protected
+
+   def configure_permitted_parameters
+     devise_parameter_sanitizer.for(:sign_up) &lt;&lt; [:first_name, :last_name, :profile_name]
+   end
+
+end</pre></noscript>
+<script src="https://gist.github.com/camilleanelli/5449770246ea24585d103fbc9b0eb89f.js"> </script>
+
+<p>=&gt; Now devise is intalled correctly,  I can add a new user :</p>
+
+<p><img src="/images/valider_sign_up.png" alt="Position" /></p>
+:ET

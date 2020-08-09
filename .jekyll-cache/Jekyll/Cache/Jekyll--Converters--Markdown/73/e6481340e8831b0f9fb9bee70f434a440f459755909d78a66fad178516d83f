@@ -1,0 +1,29 @@
+I"˜<p>I think the best way to center an element is to use flex-box.
+For example, we need to center a title in a beautiful home page.</p>
+
+<p>###In your html:</p>
+
+<p><img src="/images/center2.png" alt="Text editor" /></p>
+
+<p>###In your css:</p>
+
+<p>The container parent of the item(s), must have the proporty/value, display: flex</p>
+
+<p>Then there is many simple solutions to center your element:</p>
+
+<p>####=&gt; Apply the solution only on the container:</p>
+
+<p><img src="/images/center3.png" alt="Text editor" /></p>
+
+<p>####=&gt; Or apply on the item:</p>
+
+<p><img src="/images/centercss.png" alt="Text editor" /></p>
+
+<p>####=&gt; More minimalist:</p>
+
+<p><img src="/images/centercss2.png" alt="Text editor" /></p>
+
+<p>Thanks to read this article, and I hope it will help some beginners like me.</p>
+
+<p><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"> Here the documentation of flex-box!</a></p>
+:ET

@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 title: Devise with rails 4
 ---
 

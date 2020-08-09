@@ -1,0 +1,3 @@
+I"P<p>It is during a course of programming social network, with an older version of Rails, that I noted it was missing some steps.
+Before starting the install of devise, if you want to make your forms beautiful, (even authentication’s forms)  it is better to install “simple_form”. Indeed, I did it after and it was not working.</p>
+:ET

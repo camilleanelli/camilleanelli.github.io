@@ -1,0 +1,115 @@
+I"�<p>I wrote this article to explain how to install a datetimepicker in a rails project with bootstrap 4. Indeed, I spent a lot of time to find the solution, because it worked only with bootstrap 3.</p>
+
+<p>A datetimepicker is essential to have a much better user experience in your forms.</p>
+
+<p>Here, is what I did to install it :</p>
+
+<h2 id="1-find-the-most-recent-project-on-github-">1) Find the most recent project on github :</h2>
+
+<p><a href="&quot;https://github.com/Eonasdan/bootstrap-datetimepicker&quot;">bootstrap-datetimepicker</a>
+  Don’t install the gem !</p>
+
+<h2 id="2-install-moment-js">2) Install moment-js</h2>
+
+<p>Install moment for the format of dates.</p>
+
+<h4 id="in-your-gemfile-">In your Gemfile :</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem 'momentjs-rails', '&gt;= 2.9.0
+</code></pre></div></div>
+
+<h4 id="in-applicationjs-">In application.js :</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//= require moment
+</code></pre></div></div>
+<p>Don’t forget to re run your server</p>
+
+<h2 id="3-add-the-js-file-in-your-project">3) Add the js file in your project</h2>
+
+<h4 id="in-your-javascripts-folder-">In your javascripts folder :</h4>
+
+<p>Add the file <strong>bootstrap-datetimepicker.js</strong> and copy past the content of the file from github project src.</p>
+
+<p><a href="https://github.com/Eonasdan/bootstrap-datetimepicker/blob/master/src/js/bootstrap-datetimepicker.js">bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js</a></p>
+
+<h4 id="in-your-applicationjs-">In your application.js :####</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//= require bootstrap-datetimepicker.js
+</code></pre></div></div>
+
+<h2 id="4-add-css-file-in-your-project-">4) Add css file in your project :</h2>
+
+<h4 id="in-your-stylesheets-folder-">In your stylesheets folder :</h4>
+
+<p>Add the file <strong>bootstrap-datetimepicker.css</strong> and copy past the content of build folder in github project</p>
+
+<p><a href="&quot;https://github.com/Eonasdan/bootstrap-datetimepicker/blob/master/build/css/bootstrap-datetimepicker.css&quot;">bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css</a></p>
+
+<h4 id="in-your-applicationscss">In your application.scss</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*= require bootstrap-datetimepicker
+</code></pre></div></div>
+
+<p>Now the install is done, re run your server.</p>
+
+<h2 id="5-complete-your-view">5) Complete your view</h2>
+
+<p>If you are using simple form for, add this code in your input :</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> as: :string, input_html: { class:"datetimepicker" }
+</code></pre></div></div>
+
+<p>The class “datetimepicker” that it will be called in the script</p>
+
+<h4 id="add-the-basic-script-in-your-view">Add the basic script in your view</h4>
+
+<noscript><pre>&lt;script type=&quot;text/javascript&quot;&gt;
+  $(&#39;.datetimepicker&#39;).datetimepicker({
+    format: &quot;YYYY-MM-DD&quot;
+  });
+  &lt;/script&gt;</pre></noscript>
+<script src="https://gist.github.com/camilleanelli/38684ad8175bba4c747df9213edb200d.js"> </script>
+
+<p><a href="&quot;http://eonasdan.github.io/bootstrap-datetimepicker/Options/&quot;">Here the documentation</a></p>
+
+<p>Now it is work ! but the icons are not appear, indeed, because of the new version of bootstrap, you have to replace some code in your js file.</p>
+
+<h2 id="6-fix-the-icons-in-js-file">6) Fix the icons in js file</h2>
+
+<h4 id="in-javascriptsbootstrap-datetimepickerjs-">In javascripts/bootstrap-datetimepicker.js :##</h4>
+
+<p>Replace this code :</p>
+
+<noscript><pre>        icons: {
+            time: &#39;glyphicon glyphicon-time&#39;,
+            date: &#39;glyphicon glyphicon-calendar&#39;,
+            up: &#39;glyphicon glyphicon-chevron-up&#39;,
+            down: &#39;glyphicon glyphicon-chevron-down&#39;,
+            previous: &#39;glyphicon glyphicon-chevron-left&#39;,
+            next: &#39;glyphicon glyphicon-chevron-right&#39;,
+            today: &#39;glyphicon glyphicon-screenshot&#39;,
+            clear: &#39;glyphicon glyphicon-trash&#39;,
+            close: &#39;glyphicon glyphicon-remove&#39;
+        }</pre></noscript>
+<script src="https://gist.github.com/camilleanelli/b08c6990682d254879ca8e110d43843b.js"> </script>
+
+<p>By font-awesome icons:</p>
+
+<noscript><pre>        icons: {
+          time: &#39;fa fa-clock-o&#39;,
+          date: &#39;fa fa-calendar&#39;,
+          up: &#39;fa fa-chevron-up&#39;,
+          down: &#39;fa fa-chevron-down&#39;,
+          previous: &#39;fa fa-chevron-left&#39;,
+          next: &#39;fa fa-chevron-right&#39;,
+          today: &#39;glyphicon glyphicon-screenshot&#39;,
+          clear: &#39;fa fa-trash&#39;,
+          close: &#39;fa fa-times&#39;
+        }</pre></noscript>
+<script src="https://gist.github.com/camilleanelli/dcba61a842e3a0f707a5cbc89b74256d.js"> </script>
+
+<p>Great ! it is working</p>
+
+<p><img src="/images/datetimepicker.png" alt="Datetimepicker" /></p>
+
+<p>I hope my article will help you !</p>
+:ET

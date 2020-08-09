@@ -1,0 +1,31 @@
+I"�	<h3 id="des-objets-rspec">Des objets rspec</h3>
+
+<ul>
+  <li>Une ligne d’assertion se compose de 3 parties :</li>
+</ul>
+
+<p><img src="../assets/images/rspec.jpeg" alt="alt text" /></p>
+
+<ul>
+  <li>Si nous testons ces éléments en console :</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">'rspec/expectation'</span>
+<span class="kp">include</span> <span class="n">matchers</span> 
+<span class="n">foo</span> <span class="o">=</span> <span class="s1">'foo'</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1">#On assigne à une variable expect(foo):</span>
+<span class="n">expect_foo</span> <span class="o">=</span> <span class="n">expect</span><span class="p">(</span><span class="n">foo</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="no">RSpec</span><span class="o">::</span><span class="no">Expectations</span><span class="o">::</span><span class="no">ExpectationTarget</span><span class="p">:</span><span class="mh">0x00007ff85e05e958</span> <span class="vi">@target</span><span class="o">=</span><span class="n">foo</span><span class="o">&gt;</span></code></pre></figure>
+
+<p>=&gt; expect(objet) renvoit un objet du module ::Expectations qui englobe l’élément à tester, et sur lequel peuvent être appelées les méthodes <code class="language-plaintext highlighter-rouge">to</code>, <code class="language-plaintext highlighter-rouge">not_to</code> (ou <code class="language-plaintext highlighter-rouge">to_not</code> cela marche aussi)</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1">#On assigne à une variable eq('foo'):</span>
+<span class="n">be_foo</span> <span class="o">=</span> <span class="n">eq</span><span class="p">(</span><span class="s1">'foo'</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="no">RSpec</span><span class="o">::</span><span class="no">Matchers</span><span class="o">::</span><span class="no">BuiltIn</span><span class="o">::</span><span class="no">Eq</span><span class="p">:</span><span class="mh">0x00007ff85e0678c8</span> <span class="vi">@expected</span><span class="o">=</span><span class="s1">'foo'</span><span class="o">&gt;</span></code></pre></figure>
+
+<p>=&gt; eq(resultat attendu) renvoit un objet BuiltIn::Eq du module ::Matchers</p>
+
+<p>Les éléments qui composent les assertions sont donc de simples objets ruby</p>
+
+:ET

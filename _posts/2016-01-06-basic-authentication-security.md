@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 title: Http Basic authentication and environment variables
 ---
 

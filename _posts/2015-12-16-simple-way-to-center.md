@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 title: Center an element in CSS, using flex-box
 ---
 

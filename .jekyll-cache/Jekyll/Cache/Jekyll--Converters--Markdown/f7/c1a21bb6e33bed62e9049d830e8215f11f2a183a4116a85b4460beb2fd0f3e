@@ -1,0 +1,95 @@
+I"í<p>In my last project, I searched  to position some text inside cards, in a simple way.</p>
+
+<p>Here an example:</p>
+
+<p><img src="/images/position.png" alt="Position" /></p>
+
+<p>To have this result, I learned to position the elements by using basic layouts:</p>
+
+<p>###Position a text  inside a card:###</p>
+
+<p>1) In my index.html, I have 3 &lt;div&gt; tags, with &lt;h2&gt; .title-card inside.</p>
+
+<noscript><pre>&lt;div class=&quot;col-md-4 img1&quot;&gt;
+  &lt;h2 class=&quot;title-card&quot;&gt;Hello&lt;/h2&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;col-md-4 img1&quot;&gt;
+  &lt;h2 class=&quot;title-card&quot;&gt;Hello&lt;/h2&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;col-md-4 img1&quot;&gt;
+  &lt;h2 class=&quot;title-card&quot;&gt;Hello&lt;/h2&gt;
+ &lt;/div&gt;</pre></noscript>
+<script src="https://gist.github.com/camilleanelli/b7c70d8eaec9efcf4e88.js"> </script>
+
+<p>2) In my css, I use the positions relative for the container, and absolute for the title.</p>
+
+<noscript><pre>.img1 {
+  position: relative;
+  height: 400px;
+  background-size: auto;
+  border: 10px solid white;
+}
+
+.title-card {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+</pre></noscript>
+<script src="https://gist.github.com/camilleanelli/db37aae258444e31a8f8.js"> </script>
+
+<p>=&gt; The absolute position depends on the first parent container that has the relative position. If no parent with relative position, the element will depend on the body.</p>
+
+<p>=&gt; As you can see, I add the <strong>relative position</strong> to the container .img1.</p>
+
+<p>=&gt; Then I add the <strong>absolute position</strong> to the content .title-card.</p>
+
+<p>=&gt; With the absolute position, I can position my title everywhere I want, with properties <strong>top, right, bottom and left</strong>.</p>
+
+<p>=&gt; Now I can even position an element outside of the card, for example, a trash icon:</p>
+
+<p>###Position an icon on a card:###</p>
+
+<p>1) Inside my cards, I add &lt;div class=".trash"&gt; that contain the icon:</p>
+
+<noscript><pre>&lt;div class=&quot;col-md-4 img1&quot;&gt;
+  &lt;div class=&quot;trash&quot;&gt;
+    &lt;i class=&quot;fa fa-trash fa-2x&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+  &lt;h2 class=&quot;title-card&quot;&gt;Hello&lt;/h2&gt;
+&lt;/div&gt;</pre></noscript>
+<script src="https://gist.github.com/camilleanelli/96bf018dd7e4b21a7aee.js"> </script>
+
+<p>2) In my css, I add some properties to the .trash class:</p>
+
+<noscript><pre>.trash {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 35px;
+  height: 35px;
+  background-color: pink;
+  color: white;
+  border-radius: 20px;
+  padding-top: 5px;
+}</pre></noscript>
+<script src="https://gist.github.com/camilleanelli/82dae4e06767000d48c9.js"> </script>
+
+<p>=&gt; As for my title, in order to position the icon everywhere I want, I add the absolute position.</p>
+
+<p>=&gt; Then I use some negative values to go outside of the card.</p>
+
+<p>=&gt; In my case, and with a small negative  value of -5px, the icon stay inside and outside of the card.</p>
+
+<p>=&gt; Now I  have some cards with icon trash ( to remove cards for example).</p>
+
+<p>Here the result I have:</p>
+
+<p><img src="/images/articleposition2.png" alt="position" /></p>
+
+<p>Even if we can use some margins and padding, for me the best way to position is by using absolute and relative positions.</p>
+
+<p>If I would only want to center an element inside a card, I think the flex position would be very useful. <a href="/2015/12/16/simple-way-to-center.html">How to center with flex-box</a></p>
+:ET

@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 title: How to save time with shell scripts?
 ---
 

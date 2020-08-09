@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 title: Datetimepicker with bootstrap 4
 ---
 

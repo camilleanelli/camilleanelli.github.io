@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 title: Position a content inside a card
 ---
 In my last project, I searched  to position some text inside cards, in a simple way.

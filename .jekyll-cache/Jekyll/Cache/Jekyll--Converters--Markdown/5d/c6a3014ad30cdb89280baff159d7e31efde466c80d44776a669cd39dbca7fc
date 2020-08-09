@@ -1,0 +1,50 @@
+I"%<p>I’m not ashamed to tell that I spend so many times to find a solution with this filter, because when I gave an opacity to it, every child elements had the same opacity, so that’s why I would like to right this, even if it is simple for lot of people:</p>
+
+<p>###In my html:</p>
+
+<noscript><pre>&lt;div class=&quot;banner&quot;&gt;
+  &lt;div class=&quot;filter&quot;&gt;
+    &lt;h1&gt;Title of my website&lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre></noscript>
+<script src="https://gist.github.com/camilleanelli/2c5c6db8613afa035ef7.js"> </script>
+
+<p>###In my CSS:</p>
+
+<p>####I add css to the .banner class:</p>
+
+<noscript><pre>.banner {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 500px;
+  background-image: url(&quot;../mypicture.jpg&quot;);
+  background-size: cover;
+  
+  }
+</pre></noscript>
+<script src="https://gist.github.com/camilleanelli/4900db44ceb122f489ac.js"> </script>
+
+<p>=&gt; If I don’t give a position like <strong>absolute, relative or fixed</strong>, to the element, the z-index property will not work.</p>
+
+<p>=&gt; All elements have the <strong>z-index value of 0</strong> by default.</p>
+
+<p>=&gt; The element that has <strong>the largest value of z-index</strong>, will be positioned above the others.</p>
+
+<p>####I add css in the .filter class:</p>
+
+<noscript><pre>.filter {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.5);
+}</pre></noscript>
+<script src="https://gist.github.com/camilleanelli/b8262e02f59e378c42dc.js"> </script>
+
+<p>=&gt; I apply the same size of the .banner element.</p>
+
+<p>=&gt; Then, I add the value of 0,5 inside curly braces of <strong>rgba value</strong>, because I don’t want to apply the opacity to the child elements, like the title for example.</p>
+
+<p>I hope it will help you.</p>
+:ET

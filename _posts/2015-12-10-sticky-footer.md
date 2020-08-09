@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 title: Sticky footer, the different solutions
 ---
 

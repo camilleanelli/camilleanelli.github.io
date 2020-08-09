@@ -1,0 +1,55 @@
+I"<h2 id="http-basic-authentication">Http Basic authentication</h2>
+
+<p>When I worked on my website using ruby on rails (a backpack list for digital nomads), I had to find a solution for a simple way to secure the access of some pages . As it was a static application, I didn’t need  login or signup in my project. In order to protect the access to the actions like updating or adding categories and items, I choose the “http basic authentication”:</p>
+
+<p><a href="http://api.rubyonrails.org/classes/ActionController/HttpAuthentication/Basic.html"> Here the documentation </a></p>
+
+<ol>
+  <li><strong>First, to use this kind of authentication, I add this method in my file controllers/categories_controller.rb:</strong></li>
+</ol>
+
+<p>class CategoriesController &lt; ApplicationController</p>
+
+<p>http_basic_authenticate_with name: “my name”, password: “my password”, except: [:index, :show] (<em>to allow access at the index and show views</em>)</p>
+
+<p>end</p>
+
+<ol>
+  <li><strong>As a result, when I clic to add a new category I can see in my browser:</strong></li>
+</ol>
+
+<p><img src="/images/popup.png" alt="Popup" /></p>
+
+<p>When I finished to install my basic authentication, I didn’t push my work on github, because of my password writing directly inside the code. Indeed, it is dangerous to put your secret informations inside the code, as anybody can see your code in your github account, mostly if it is a public project.
+To resolve this issue, I used the environment variables.</p>
+
+<p>##Secure the confidential data with environment variables:##</p>
+
+<ol>
+  <li>First, I Install the <a href="https://github.com/bkeepers/dotenv"> gem dotenv </a>.</li>
+  <li>In the root of the application, I create a file <strong>.env</strong>.</li>
+  <li>
+    <p>In this file, I create my environment variables  by using uppercases.</p>
+
+    <p>For example:  MY_NAME = “name” My_PASSWORD = “password”.</p>
+  </li>
+  <li>
+    <p>Then I replace my personal informations (name and password) by the variables in the categories_controller.rb.</p>
+
+    <p>http_basic_authenticate_with name: “your name”, password: “your password”, except: [:index, :show].</p>
+
+    <p><strong>Replaced by:</strong></p>
+
+    <p><strong>http_basic_authenticate_with name: ENV[‘MY_NAME’], password: ENV[“MY_PASSWORD”], except: [:index, :show]</strong></p>
+  </li>
+  <li>
+    <p>The last step is very important,  I add the .env file in the <strong>.gitignore file</strong>.</p>
+
+    <p>Now I can push the work on my repository.</p>
+  </li>
+</ol>
+
+<p>The environment variables can be used in many other cases.
+I did this authentication, because they will be only one or two administrators.
+In The next step, I will add an administrator area, and the http authentication inside the admin/controllers.rb , instead of controller.rb.</p>
+:ET
