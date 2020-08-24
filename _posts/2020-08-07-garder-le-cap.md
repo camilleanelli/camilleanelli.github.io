@@ -10,18 +10,20 @@ Cet article s'adresse à celles et ceux qui vont faire un bootcamp ou qui en sor
 
 Lorsqu'on parle de maintenir le cap, on parle de conserver un état, d'avancer vers le même but que l'on s'était fixé. De continuer tout droit, bref de tracer sa route ! 
 
-Je tiens à préciser que tous les conseils ci dessous n'ont pas tous été appliqués à la lettre par choix ou tout simplement par ignorance et parce que c'est pas facile tout simplement.
-C'est avec un grand recule que je peux me permettre aujourd'hui de dévoiler tous ces conseils.
+Je tiens à préciser que tous les conseils ci dessous n'ont pas tous été appliqués à la lettre, par choix ou à cause de mon ignorance à l'époque ou j'ai débuté et parce que c'est pas facile tout simplement.
+C'est avec du recule que j'ai choisi de vous partager dans cet article mes conseils et ma propre expérience. 
 
-A la sortie d'un bootcamp ou d'une formation accélérée comme par exemple Le Wagon, plusieurs options s'offrent à vous si vous voulez maintenir le cap: soit vous entamez une carrière en entreprise ou en freelance, soit vous vous accordé du temps pour vous former. Tout dépend des possibilités et du context. 
-Pour ma part j'ai fait un peu des 2 : du freelance au début, puis j'ai voyagé (en continuant d'apprendre)
+A la sortie d'un bootcamp ou d'une formation accélérée comme par exemple Le Wagon, plusieurs options s'offrent à vous si vous voulez maintenir le cap: soit vous entamez une carrière en entreprise ou en freelance, soit vous vous accordez du temps pour vous former. Tout dépend des possibilités et du contexte . 
+Pour ma part j'ai fait un peu des 2 : j'ai travaillé sur des projets au début, puis j'ai voyagé (en continuant d'apprendre)
 
+Voici mes recommandations à suivre apres un bootcamp: 
 
- 1.Savoir si on est embauchable:
+ 1.Chercher à savoir quel est votre niveau : 
 
-  Même si on ne souhaite pas intègrer une entreprise, (certains n'ont pas d'autres choix et doivent se lancer) 
-  passer des entretiens d'embauches vous permettra de connaitre les attentes des entreprises dans le besoins, 
+  Tout dépend des profils , certaines personnes peuvent se lancer tout de suite et sont suffisamment de confiance ou d'aisance pour trouver un job en tant que développeur . Tout dépend de votre bagage . 
+  Même si on ne souhaite pas intègrer une entreprise, passer des entretiens d'embauches vous permettra de connaitre les attentes des redans le besoins, 
   de s'entrainer et de prendre de l'aisance en situation.
+  D
   
   Passer des entretiens amène à passer des tests techniques (vous n'y échapperez pas!): 
   en passant ces tests techniques on prend conscience de son niveau. 
