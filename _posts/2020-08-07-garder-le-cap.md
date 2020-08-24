@@ -6,7 +6,7 @@ title:  Comment garder le cap après un bootcamp
 
 ![Alt Text](https://media.giphy.com/media/WR6kc5Lytbnd6/giphy.gif)
 
-Cet article s'adresse à celles et ceux qui vont faire un bootcamp ou qui en sortent, et dans le but de se reconvertir dans le dev . ( c'est pas le cas de tous les étudiants ) 
+Cet article s'adresse à celles et ceux qui vont faire un bootcamp ou qui en sortent, et dont l'objectif est d'apprendre le métier de développeur.
 
 Lorsqu'on parle de maintenir le cap, on parle de conserver un état, d'avancer vers le même but que l'on s'était fixé. De continuer tout droit, bref de tracer sa route ! 
 
@@ -20,34 +20,37 @@ Pour ma part j'ai fait un peu des 2 : du freelance au début, puis j'ai voyagé 
  1.Savoir si on est embauchable:
 
   Même si on ne souhaite pas intègrer une entreprise, (certains n'ont pas d'autres choix et doivent se lancer) 
-  passer des entretiens d'embauches vous permettra connaitre les attentes des CTO des entreprises 
+  passer des entretiens d'embauches vous permettra de connaitre les attentes des entreprises dans le besoins, 
   de s'entrainer et de prendre de l'aisance en situation.
   
   Passer des entretiens amène à passer des tests techniques (vous n'y échapperez pas!): 
   en passant ces tests techniques on prend conscience de son niveau. 
   Si l'entretien technique est réussi, alors tant mieux sinon c'est une bonne nouvelle: il vous manque des compétences et vous savez lesquelles. 
-  Savoir qu'il nous manque des connaissances, c'est savoir sur quoi se former et combler les trous. Vous devenez donc plus embauchable et plus crédible aupres des employeurs ou clients.
+  Savoir qu'il nous manque des connaissances, c'est savoir sur quoi se former et combler les trous. Vous devenez donc plus embauchable et plus crédible lors des futures entretients. 
 
-  Il faut savoir que si vous trouvez un job dès la sortie de la formation c'est génial, mais les conseils ci dessous doivent aussi s'appliquer en parallele. 
+  Si vous trouvez un job dès la sortie de la formation c'est génial, mais les conseils ci dessous doivent aussi s'appliquer en parallele. 
 
  2.Se former 
 
   Un bootcamp de 3 mois ne vous apprend que la couche externe ( 3 mois c'est cours )
   Pour comprendre la programmation, il faut y aller profondeur. Et surtout plus on en sait plus on s'apercois qu'on ne sait rien . Il y a énormement de choses à savoir et même des choses que vous ne découvrirez jamais si vous ne mettez pas les pieds dans une équipe technique au sein d'une entreprise. 
 
-  Il existe énormement de ressources en ligne et dans les livres pour approfondir les connaissances acquises durant la formation. Par exemple durant la formation que j'ai suivie, le TDD pourtant un fondamentale n'a pas été abordé. 
-  Un bootcamp de 3 mois est intensif, puis tout s'arrete, et boom on est en vacances ! 
-  Il ne s'agit pas de bosser au même rytme mais d'entretenir son cerveau face à l'apprentissage du code, trouver un rythme régulier qui convienne et moins intensif bien sure. 
+  Il existe énormement de ressources en ligne et dans les livres pour approfondir les connaissances acquises durant la formation. Par exemple, durant la formation que j'ai suivie, le sujet du test driven developpment, pourtant un fondamentale n'a pas été abordé. 
+  Un bootcamp de 3 mois est intensif, puis tout s'arrête, et boom on est en vacances ! 
+  Il ne s'agit pas de bosser au même rytme que lors du bootcamp, mais d'entretenir son cerveau face à l'apprentissage du code.
 
-  suivre des cours en ligne c'est avant tout: 
-  lire des livres techniques
-  faire de la veille technique: lire des articles, s'abonner à des news letters
-  faire des exercices d'algorithmie
+  - suivre des cours en ligne:  
+  - lire des livres techniques
+  - faire de la veille technique: lire des articles, s'abonner à des news letters
+  - faire des exercices d'algorithmie
 
-3.Creer des projets et/ou des articles
+3.Mettre en pratique ses connaissances et être visible;
 
   Se former permet donc d'acquérir des compétences
-  c'est bien connu: c'est dans la pratique que l'on acquiert le mieux et le plus rapidement des compétences 'utiles'. Le mieux est donc de trouver une idée de projet comme au Wagon, puis de lui donner vie et pourquoi pas que cela devienne un vrai projet rentable ... 
+  c'est bien connu: c'est dans la pratique que l'on acquiert le mieux et le plus rapidement des compétences 'utiles'. Le mieux est donc de trouver une idée de projet comme au Wagon, puis de lui donner vie  ... 
+  Mettre en pratique ses connaissances permet d'être visible, d'avoir des projets à montrer
+
+  Etre visible peut aussi passer par la rédaction d'articles comme projet . 
 
 4.Aller aux conférences qui concernent votre spécialité 
 
@@ -56,7 +59,7 @@ En allant aux conférences et en s'y interessant sincéremmment vous montrez que
 
 ### La preuve par l'exemple: 
 
-Pour être franche mon projet apres la formation était de voyager une année entière et de me consacrer à des projets personnels pour me former. J'ai lié l'utile à l'agréable, et alors? oui j'en avais besoins voila. 
+Pour être franche mon projet apres la formation était de voyager une année entière et de me consacrer à des projets personnels pour me former. J'ai lié l'utile à l'agréable, car j'en avais besoins . 
 
 D'un point de vue professionnel je ne serais dire si cela était la meilleurs solution. Si je devais retourner en arrière j'aurais probablement fait la mème chose en poussant l'apprentissage un peu plus loin. 
 Voici ce que moi j'ai fait en sortant du Wagon et parce que mon objectif étant vraiment de me reconvertir dans ce domaine. Je tiens à préciser que ceci n'est pas l'atitude parfaite ni le meilleurs exemple à suivre.  
@@ -66,9 +69,10 @@ Ce que je n'ai pas fait ou du moins, ce qui m'a ralentie:
 
 - Je n'ai pas passé d'entretiens à la sortie du Wagon j'avais trop peur ! (peur de l'échec, et le syndrome de l'inposteuse )
 - Au cours de mes voyages, les premiers mois n'ont pas été très productifs, par manque de discipline ... et de motivation.
-- Pour ce qui est des livres techiques j'en ai lu aucun parce que je n'aurais rien compris à l'époque: de mon point de vue, certains livres techniques son interressants après la pratique, pourquoi? parce que l'auteur vous parle souvent de situations et de principes un peu avancés que vous n'aurez pas forcément eu l'occasion de rencontrer surtout si vous êtes nouveau dans le milieu de la programmation (je m'adresse à ceux qui se sont vraiment reconvertis)
-il y a beaucoup de théorie donc cela peut vite devenir incompréhensible lorsqu'on part de zero et qu'on vient d'un autre milieu surtout. 
-Néennoins il y a certains livres que j'aurais du lire histoire d'essayer cela n'aurait rien couté... 
+- Pour ce qui est des livres techiques j'en ai lu aucun parce que je n'aurais rien compris à l'époque: de mon point de vue, certains livres techniques son interressants lorsqu'on a plus de pratique, pourquoi? 
+parce que l'auteur vous parle souvent de situations et de principes un peu avancés qui sont rencontrés apres un certain niveau de pratique.
+La théorie dans les livres peut vite devenir incompréhensible lorsqu'on part de zero et qu'on vient d'un autre milieu. 
+ 
 
 Ce que j'ai fait et qui m'a aidé :
 
@@ -80,14 +84,13 @@ Ce que j'ai fait et qui m'a aidé :
 - je suis allé à une conférence internationale et de là, j'y ai même rencontré mon premier employeur le CTO d'une boite. (j'ai postulé chez lui l'année d'apres)
 
 
-j'ai fini par etre embauché apres mon année de voyages , mais être embauché n'est pas une fin en sois . J'ai senti que j'avais pas mal de lacunes, c'était difficile et je n'avais pas le courage de continuer à me former la première année. Grave erreur. 
-Si vous débutez en entreprise et en savoir plus sur les choses à faire voici un autre article.
+j'ai fini par etre embauché apres mon année de voyages , mais être embauché n'est pas une fin en sois, il faut régulièrement continuer son apprentissage pour maintenir le cap . 
 Pour conclure, l'apprentissage doit rester constant et rien n'est jamais acquis dans ce domaine .
 IL faut persister voila tout je persiste encore d'ailleurs... et j'ai pris l'habitude de me former régulièrement.
 
 J'espère que cet article vous aura apporté de l'aide ou de la joie
 
-Love
+Bisous 
 
 
 
