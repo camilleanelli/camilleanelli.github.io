@@ -1,8 +1,12 @@
 ---
 tag: CSS
 layout: post
-title: Sticky footer, the different solutions
+title: CSS, sticky footer, the different solutions
 ---
+
+## Sticky footer, the different solutions
+
+___
 
 When I began to work on design of websites , I  had problem with the position of my footer. Indeed, on some pages, the footer can be on the middle of the page, instead of the bottom.
 
@@ -10,7 +14,7 @@ When I began to work on design of websites , I  had problem with the position of
 
 The solutions that I learned are very simple.
 
-## The calc() value: ##
+## The calc() value
 
   In my html, below the header, I have a <div class="container"></div> that take every content inside, without the footer.
   In my css, on this .container, I add the __100vh__ value to the __min-height__ property. It will take the entire space of the window.
@@ -36,7 +40,7 @@ The solutions that I learned are very simple.
 
   There is another way, if you enjoy using the flex box, it can do the same too.
 
-## The flexbox solution: ##
+## The flexbox solution ##
 
   In my css, on the container, I add this code:
 

@@ -1,8 +1,12 @@
 ---
 tag: Tools
 layout: post
-title: How to save time with shell scripts?
+title: Save time with shell scripts
 ---
+
+## Save time with shell scripts
+
+___
 
 In a rails project, I had to repeat the same steps very frequently, for example :
 

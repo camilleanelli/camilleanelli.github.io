@@ -6,6 +6,10 @@ title: Jekyll, ajouter Algolia search
 
 ## Jekyll, ajouter Algolia search
 
+___
+
+(Cet article date de 2017 et est possiblement obsolète).
+
 Lorsque les articles se multiplient sur un blog, il est utile d'ajouter une barre de recherches, pour une meilleurs expérience utilisateur.
 Je vais donc vous expliquer les différentes étapes que j'ai effectué pour installer une search Algolia sur un projet de blog avec Jekyll.
 Avant cela, quelques pré-requis sont nécessaires:

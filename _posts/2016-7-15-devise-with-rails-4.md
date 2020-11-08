@@ -1,7 +1,11 @@
 ---
-tag: Rails 4
+tag: [Ruby on Rails]
 layout: post
-title: Devise with Rails 4
+title: Rails 4 and Devise authentication
+---
+
+## Devise authentication
+
 ---
 
 It is during a course of programming social network, with an older version of Rails, that I noted it was missing some steps.

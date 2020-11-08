@@ -1,7 +1,7 @@
 _site
 .sass-cache
 .jekyll-metadata
-article-idea.md
+/article-idea.html
 node_modules
 drafts
 .jekyll-cache
