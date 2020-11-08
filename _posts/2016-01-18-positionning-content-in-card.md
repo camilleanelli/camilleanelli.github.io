@@ -1,4 +1,5 @@
 ---
+tag: CSS
 layout: post
 title: Position a content inside a card
 ---
@@ -10,7 +11,7 @@ Here an example:
 
 To have this result, I learned to position the elements by using basic layouts:
 
-###Position a text  inside a card:###
+### Position a text  inside a card: ###
 
 1) In my index.html, I have 3 <div> tags, with <h2> .title-card inside.
 
@@ -30,7 +31,7 @@ To have this result, I learned to position the elements by using basic layouts:
 
 => Now I can even position an element outside of the card, for example, a trash icon:
 
-###Position an icon on a card:###
+### Position an icon on a card: ###
 
 1) Inside my cards, I add <div class=".trash"> that contain the icon:
 

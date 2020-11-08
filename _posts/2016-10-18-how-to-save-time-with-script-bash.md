@@ -1,4 +1,5 @@
 ---
+tag: Tools
 layout: post
 title: How to save time with shell scripts?
 ---
@@ -19,7 +20,7 @@ A shell script allows us to automate series of command lines that we must repeat
 
 Here the basic configuration I made :
 
-#### 1) Create a file.sh, inside the folder /bin, and add a line in the top of the page: ####
+#### 1) Create a file.sh, inside the folder /bin, and add a line in the top of the page ####
 
 ```
 cd bin
@@ -29,11 +30,11 @@ cd bin
 ➜  bin git: touch name_of_the_file.sh
 ```
 
-#### 2) Inside the file, I write the command line LS to see all files inside /bin: ####
+#### 2) Inside the file, I write the command line LS to see all files inside /bin ####
 
 {% gist camilleanelli/99ef426691c3c9a69a4af6eaf6e1fc0e %}
 
-#### 3) Test the script by running it inside the /bin folder : ####
+#### 3) Test the script by running it inside the /bin folder ####
 
 ```
 ➜  bin git: ./name_of_the_file.sh
@@ -45,11 +46,11 @@ Unfortunately, we can see the file is not executable. To resolve it, run the com
 chmod +x name_of_the_file.sh
 ```
 
-#### 4) Great ! Add command lines you want to run, inside your shell file, for example : ####
+#### 4) Great ! Add command lines you want to run, inside your shell file, for example ####
 
 {% gist camilleanelli/1f02f24e2d0cbe971c03674eb35b18f9 %}
 
-#### 5) Execute the file with this syntax : ####
+#### 5) Execute the file with this syntax ####
 
 ```
 ./bin/name_of_your_file.sh

@@ -1,25 +1,13 @@
 <!doctype html>
 <html>
-  {% include header.html %}
-  <body>
-    {% include sidebar_responsive.html %}
-    <nav class="hidden md:flex bg-transparent fixed w-full flex-row  py-2 p-6">
-      <div class="w-1/2 flex flex-row items-center justify-start">
-        <a href="/">
-          <div class="bg-cover bg-center shadow-xs rounded-full h-20 w-20" style="background-image: url(/assets/images/camilleee.jpg)">
-          </div>
-        </a>
-        <div class="text-white ml-2">Camille Anelli</div>
-      </div>
-      <div class="w-1/2 flex flex-row space-x-4 items-center md:pr-24 justify-end text-white m-4">
-        <a href="https://www.linkedin.com/in/camilleanelli/"><i class="text-purple-500 hover:text-white fa-2x fab fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/cam_anelli/"><i class="text-purple-500 hover:text-white fa-2x fab fa-instagram"></i></a>
-        <a href="https://github.com/camilleanelli" target="_blank"><i class="text-purple-500 hover:text-white fa-2x fab fa-github-square"></i></a>
-        <a href="https://twitter.com/CamilleAnelli"><i class="text-purple-500 hover:text-white fa-2x fab fa-twitter-square"></i></a>
-      </div>
-    </nav>
-    <div class="bg-gray-200">
-      {{ content }}
-    </div>
-  </body>
+{% include header.html %}
+
+<body>
+  <div
+    class="text-gray-300 font-mono bg-gray-200 font-mono flex bg-gradient-to-r from-purple-700 to-teal-600 flex-col justify-start h-screen w-full">
+    {{ content }}
+  </div>
+  <script src='base.js'></script>
+</body>
+
 </html>

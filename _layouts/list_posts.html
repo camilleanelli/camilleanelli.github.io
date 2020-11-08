@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+{% include header.html %}
+
+<body>
+  <div
+    class="text-gray-300 font-mono font-mono flex bg-gradient-to-r from-purple-700 to-teal-600 flex-col justify-start h-full w-full">
+    {% include sidebar_static.html %}
+    {% include sidebar.html %}
+    {{ content }}
+  </div>
+  <script src='base.js'></script>
+</body>
+
+</html>

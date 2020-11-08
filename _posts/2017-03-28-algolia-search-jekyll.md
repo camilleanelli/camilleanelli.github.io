@@ -1,25 +1,26 @@
 ---
+tag: [jekyll, algolia]
 layout: post
 title: Ajouter Algolia search sur un thème jekyll
 ---
 
 ### Algolia et l'index ###
 
-Lorsque les articles se multiplient sur un blog, il est utile d'ajouter une search bar afin que l'utilisateur puisse retrouver ces articles par mots clés. 
+Lorsque les articles se multiplient sur un blog, il est utile d'ajouter une search bar afin que l'utilisateur puisse retrouver ces articles par mots clés.
 Je vais donc vous expliquer les différentes étapes que j'ai effectué pour installer une search Algolia dans mon projet jekyll.
 
 1. Nous devons d'abord créer un compte [Algolia](https://www.algolia.com). Pour ma part j'ai pris le "community plan", le plan gratuit.
 
 2. Ensuite nous allons suivre le tutorial de base pour mieux comprendre le fonctionnement du produit. Il est simple, facile et rapide à suivre.
 
-3. Une fois ce tutorial complété, nous pouvons aller dans le dashboard, et créer un nouvel index. 
-	L'index représente la base de donnée dans laquelle se trouvera le contenu des articles que l'on souhaite afficher dans le résultat de la search:
+3. Une fois ce tutorial complété, nous pouvons aller dans le dashboard, et créer un nouvel index.
+ L'index représente la base de donnée dans laquelle se trouvera le contenu des articles que l'on souhaite afficher dans le résultat de la search:
 
-	![index](/images/blogAlgoliaSite.png)
-	Cliquer sur le lien "indice" à gauche de l'écran.
+ ![index](/images/blogAlgoliaSite.png)
+ Cliquer sur le lien "indice" à gauche de l'écran.
 
-	Cliquer sur "new index" en haut à droite de la page.
-	![index](/images/index-alg.png)
+ Cliquer sur "new index" en haut à droite de la page.
+ ![index](/images/index-alg.png)
 
 ### Indexation des données ###
 
@@ -28,43 +29,41 @@ Pour commencer nous allons consulter la page [github algoliasarch-jekyll](https:
 
 1. S'il n'y a pas de gemfile dans notre projet, nous devons en créer un, puis ajouter la bonne version de jekyll, puis la gem Algolia search jekyll.
 
-	{% gist camilleanelli/48c95a097446ff6dad1e0763a7563feb %}
+ {% gist camilleanelli/48c95a097446ff6dad1e0763a7563feb %}
 
+ 'bundle install'
 
-	'bundle install'
-	
+2.Dans le config.yml, on ajoute également la gem - algoliasearch-jekyll
 
-2. Dans le config.yml, on ajoute également la gem - algoliasearch-jekyll
+ {% gist camilleanelli/9282330e021abd7905b97c604f1c9379 %}
 
-	{% gist camilleanelli/9282330e021abd7905b97c604f1c9379 %}
+3.Pour vérifier si l'installation s'est correctement effectuée, on exécute la commande -jekyll help. Une liste des sous-commandes Algolia doit alors s'afficher.
 
-3. Pour vérifier si l'installation s'est correctement effectuée, on exécute la commande -jekyll help. Une liste des sous-commandes Algolia doit alors s'afficher.
+ ```
+ jekyll help
+ ```
 
-	```
-	jekyll help
-	```
-
-	Si ce n'est pas le cas, le problème vient peu être du faite qu'il manque des gem dans notre Gemfile.
+ Si ce n'est pas le cas, le problème vient peu être du faite qu'il manque des gem dans notre Gemfile.
 
 4. Avant d'aller plus loin, nous devons donc ajouter des gem manquantes dans le gemfile:
-	{% gist camilleanelli/958c7bb082e69af373fa75210d5293f0 %} 
+ {% gist camilleanelli/958c7bb082e69af373fa75210d5293f0 %}
 
-	'bundle install'
+ 'bundle install'
 
 5. Une fois ces configurations terminées , il faut maintenant ajouter dans le config.yml:
 
-	Mon application_id, situé dans l'onglet "keys api" sur la gauche.
+ Mon application_id, situé dans l'onglet "keys api" sur la gauche.
 
-	Mon index_name, qui correspond au nom que nous donnons à l'index lors de sa création.
+ Mon index_name, qui correspond au nom que nous donnons à l'index lors de sa création.
 
-6. En ligne de commande, on peu maintenant executer l'import des données: 
-	Sur mon compte Algolia, j'ai 2 clès d'api, une 'read_only_key', qui concerne la search uniquement et qui peu être vue, et une 'write_api_key' qui doit restée secrète, c'est la clès d'admin.
+6. En ligne de commande, on peu maintenant executer l'import des données:
+ Sur mon compte Algolia, j'ai 2 clès d'api, une 'read_only_key', qui concerne la search uniquement et qui peu être vue, et une 'write_api_key' qui doit restée secrète, c'est la clès d'admin.
 
-	```
-	ALGOLIA_API_KEY='write_api_key' jekyll algolia push
-	```
+ ```
+ ALGOLIA_API_KEY='write_api_key' jekyll algolia push
+ ```
 
-	Je remplace 'write_api_key' par ma propre clès d'api d'admin.
+ Je remplace 'write_api_key' par ma propre clès d'api d'admin.
 
 ### Affichage de la search ###
 
@@ -76,7 +75,7 @@ Une fois sur ce theme nous allons récupérer le code qui va nous servir à affi
 
 Dans mon cas j'ai souhaité mettre la search bar directement sur la page index et non dans une partial. Voici les étapes :
 
-1. Inclure le css dans les assets : algolia.scss, hyde.scss, et syntaxe.scss. 
+1. Inclure le css dans les assets : algolia.scss, hyde.scss, et syntaxe.scss.
 
 2. Inclure le fichier Algolia.js dans les assets.
 
@@ -84,27 +83,20 @@ Dans mon cas j'ai souhaité mettre la search bar directement sur la page index e
 
 3. Copier les scripts du footer dans notre footer. Les script inclus dans le footer sont indispensables pour faire apparaître les resultats de la recherche.
 
-	[_includes/footer.html](https://github.com/algolia/algoliasearch-jekyll-hyde/blob/master/_includes/footer.html).
+ [_includes/footer.html](https://github.com/algolia/algoliasearch-jekyll-hyde/blob/master/_includes/footer.html).
 
 4. On récupèrer la balise < input > du fichier _includes/sidebar.html du projet hyde theme, qu'on place à l'endroit désiré.
 
-	{% gist camilleanelli/103696d3d32118ff20fd6301ea84dda6 %}
+ {% gist camilleanelli/103696d3d32118ff20fd6301ea84dda6 %}
 
 5. Recupérer le contenue du layout default.html, et remplacer le content par notre propre code qui est censé affiché les articles sur la page index
 
-	{% gist camilleanelli/661d7c112d7132181ce0a9e55184e41d %}
-	
+ {% gist camilleanelli/661d7c112d7132181ce0a9e55184e41d %}
 
-	Maintenant nous pouvons intervenir dans le css, et même le js pour modifier le design de la search. Par exemple, supprimer le scroll qui fait bouger la page vers le haut lors de la validation de la search, arrondir la forme de l'input.
+ Maintenant nous pouvons intervenir dans le css, et même le js pour modifier le design de la search. Par exemple, supprimer le scroll qui fait bouger la page vers le haut lors de la validation de la search, arrondir la forme de l'input.
 
-6. Voici le résultat obtenu 
+6. Voici le résultat obtenu
 
-	![result](/images/algoliaResultblog.png)
+ ![result](/images/algoliaResultblog.png)
 
-	On a bien une search installée, qu'on pourra bien sûre améliorer en fonction de notre thème.
-
-
-
-
-
-
+ On a bien une search installée, qu'on pourra bien sûre améliorer en fonction de notre thème.

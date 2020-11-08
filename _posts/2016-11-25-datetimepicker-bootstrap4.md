@@ -1,6 +1,7 @@
 ---
+tag: Rails 4
 layout: post
-title: Datetimepicker with bootstrap 4
+title: Datetimepicker with Bootstrap 4
 ---
 
 I wrote this article to explain how to install a datetimepicker in a rails project with bootstrap 4. Indeed, I spent a lot of time to find the solution, because it worked only with bootstrap 3.
@@ -9,7 +10,7 @@ A datetimepicker is essential to have a much better user experience in your form
 
 Here, is what I did to install it :
 
-## 1) Find the most recent project on github : ##
+## 1) Find the most recent project on github ##
 
   [bootstrap-datetimepicker]("https://github.com/Eonasdan/bootstrap-datetimepicker")
   Don't install the gem !
@@ -18,35 +19,37 @@ Here, is what I did to install it :
 
 Install moment for the format of dates.
 
-#### In your Gemfile : ####
+#### In your Gemfile ####
+
 ```
 gem 'momentjs-rails', '>= 2.9.0
 ```
 
-#### In application.js : ####
+#### In application.js ####
 
 ```
 //= require moment
 ```
+
 Don't forget to re run your server
 
-##  3) Add the js file in your project ##
+## 3) Add the js file in your project ##
 
-#### In your javascripts folder : ####
+#### In your javascripts folder ####
 
 Add the file **bootstrap-datetimepicker.js** and copy past the content of the file from github project src.
 
 [bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js](https://github.com/Eonasdan/bootstrap-datetimepicker/blob/master/src/js/bootstrap-datetimepicker.js)
 
-#### In your application.js :####
+#### In your application.js ####
 
 ```
 //= require bootstrap-datetimepicker.js
 ```
 
-## 4) Add css file in your project : ##
+## 4) Add css file in your project ##
 
-#### In your stylesheets folder : ####
+#### In your stylesheets folder ####
 
 Add the file **bootstrap-datetimepicker.css** and copy past the content of build folder in github project
 
@@ -79,7 +82,7 @@ Now it is work ! but the icons are not appear, indeed, because of the new versio
 
 ## 6) Fix the icons in js file ##
 
-#### In javascripts/bootstrap-datetimepicker.js :##
+#### In javascripts/bootstrap-datetimepicker.js ##
 
 Replace this code :
 

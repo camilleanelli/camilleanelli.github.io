@@ -2,61 +2,39 @@
 layout: default
 ---
 
-<div class="items-center md:flex-row justify-center w-full h-screen bg-cover flex" style="background-image: url(assets/images/japon.jpg)">
-  <div class="sm:invisible w-1/3"></div>
-  <div class="flex-col justify-center">
-    <div class="resume text-center items-center font-sans text-base md:text-3xl text-white">Ruby on Rails web developer since 2017, and working as freelancer</div>
-    <div class='text-center items-center font-sans text-base md:text-xl text-white'>Lille - Paris</div>
-    <div class='flex items-center justify-center'>
-      <a href="/404.html">
-        <button class="bg-transparent text-white text-xl py-2 px-4 m-6 border border-white hover:text-purple-500 hover:border-purple-500 rounded">
-          Show more 
-        </button>
-      </a>
+{% include home_responsive.html %}
+<div class="flex-col">
+  <div class="flex flex-row">
+    <div class="w-0 lg:w-1/6"></div>
+    <div class="flex flex-row justify-start w-full md:w-3/6 lg:2/6">
+      <div class="sm:ml-6 lg:pr-6 flex-col">
+        <div class="sidebar invisible md:visible flex flex-row space-x-4 md:text-xl mt-4">
+          {% include navigation.html %}
+        </div>
+        <div class="invisible md:visible resume text-base md:mt-56 md:text-3xl">
+          {% include intro.html %}
+        </div>
+      </div>
     </div>
+    <div class="flex flex-row justify-end w-0 invisible md:visible md:w-3/6 lg:w-2/6">
+      <div class="flex-col sm:mr-6 mr-0">
+        <div class="flex flex-row space-x-4 items-center justify-end my-4">
+          <a href="https://www.linkedin.com/in/camilleanelli/"><i
+              class="text-purple-900 hover:text-purple-700 fa-2x fab fa-linkedin"></i></a>
+          <a href="mailto:anelli.dev@gmail.com" target="_blank">
+            <i class="text-purple-900 hover:text-purple-700 fa-2x fas fa-envelope"></i>
+          </a>
+          <a href="https://github.com/camilleanelli" target="_blank"><i
+              class="text-purple-900 hover:text-purple-700 fa-2x fab fa-github-square"></i></a>
+          <a href="https://twitter.com/CamilleAnelli"><i
+              class="text-purple-900 hover:text-purple-700 fa-2x fab fa-twitter-square"></i>
+          </a>
+        </div>
+        <div class="mt-56 bg-cover bg-center shadow-xs rounded-lg w-64 h-64"
+          style="background-image: url(/assets/images/camilleee.jpg)">
+        </div>
+      </div>
+    </div>
+    <div class="w-0 lg:w-1/6"></div>
   </div>
-  <div class="w-1/3"></div>
 </div>
-
-  <div id='show' class="flex flex-col md:h-56 md:flex-row items-center">
-    <section class="rounded-sm shadow-lg w-full md:w-1/3 articles text-gray-700 p-4 text-center m-4">
-      <div class="font-bold text-xl mb-2 border-b-2">Articles</div>
-      <div>
-          {% for post in site.posts %}
-            <!-- <div class="border-b-2 border-purple-500 text-center py-2"> -->
-              <!-- <p><a href="{{ post.url }}">{{ post.title }}</a></p>
-              <p class="text-gray-500 text-sm">{{ post.date | date: '%B %Y' }}</p> -->
-            <!-- </div> -->
-          {% endfor %}
-      </div>
-    </section>
-
-    <section class="rounded-sm shadow-lg w-full md:w-1/3 articles text-gray-700 p-4 text-center m-4">
-      <div class="font-bold text-xl mb-2 border-b-2">Notes technique</div>
-      <div>
-          {% for note in site.notes %}
-            <!-- <div class="border-b-2 border-purple-500 text-center py-2"> -->
-              <!-- <p><a href="{{ note.url }}">{{ note.title }}</a></p>
-              <p class="text-gray-500 text-sm">{{ note.date | date: '%B %Y' }}</p> -->
-              
-            <!-- </div> -->
-          {% endfor %}
-      </div>
-    </section>
-
-    <section class="rounded-sm md:flex-shrink shadow-lg w-full md:w-1/3 articles text-gray-700 p-4 text-center m-4">
-      <div class="font-bold text-xl mb-2 border-b-2">Blog posts</div>
-      <div>
-          {% for post in site.english_posts %}
-            <!-- <div class="border-b-2 border-purple-500 text-center py-2">
-              <p><a href="{{ post.url }}">{{ post.title }}</a></p>
-            </div> -->
-          {% endfor %}
-      </div>
-    </section>
-  </div>
-
-  <section id="footer" class="rounded-sm shadow-lg border-2 text-gray-700 p-4 text-center m-4">
-    Mention légales 
-
-  </section>
