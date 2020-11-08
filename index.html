@@ -3,38 +3,36 @@ layout: default
 ---
 
 {% include home_responsive.html %}
-<div class="flex-col">
-  <div class="flex flex-row">
-    <div class="w-0 lg:w-1/6"></div>
-    <div class="flex flex-row justify-start w-full md:w-3/6 lg:2/6">
-      <div class="sm:ml-6 lg:pr-6 flex-col">
-        <div class="sidebar invisible md:visible flex flex-row space-x-4 md:text-xl mt-4">
-          {% include navigation.html %}
-        </div>
-        <div class="invisible md:visible resume text-base md:mt-56 md:text-3xl">
-          {% include intro.html %}
-        </div>
+<div class="flex flex-row">
+  <div class="w-0 lg:w-1/6"></div>
+  <div class="flex flex-row justify-start w-full md:w-3/6 lg:2/6 py-2">
+    <div class="sm:ml-6 lg:pr-6 flex-col">
+      <div class="sidebar invisible md:visible flex flex-row space-x-6 md:text-xl mt-4">
+        {% include navigation.html %}
+      </div>
+      <div class="invisible md:visible resume text-base md:mt-56 md:text-3xl">
+        {% include intro.html %}
       </div>
     </div>
-    <div class="flex flex-row justify-end w-0 invisible md:visible md:w-3/6 lg:w-2/6">
-      <div class="flex-col sm:mr-6 mr-0">
-        <div class="flex flex-row space-x-4 items-center justify-end my-4">
-          <a href="https://www.linkedin.com/in/camilleanelli/"><i
-              class="text-purple-900 hover:text-purple-700 fa-2x fab fa-linkedin"></i></a>
-          <a href="mailto:anelli.dev@gmail.com" target="_blank">
-            <i class="text-purple-900 hover:text-purple-700 fa-2x fas fa-envelope"></i>
-          </a>
-          <a href="https://github.com/camilleanelli" target="_blank"><i
-              class="text-purple-900 hover:text-purple-700 fa-2x fab fa-github-square"></i></a>
-          <a href="https://twitter.com/CamilleAnelli"><i
-              class="text-purple-900 hover:text-purple-700 fa-2x fab fa-twitter-square"></i>
-          </a>
-        </div>
-        <div class="mt-56 bg-cover bg-center shadow-xs rounded-lg w-64 h-64"
-          style="background-image: url(/assets/images/camilleee.jpg)">
-        </div>
-      </div>
-    </div>
-    <div class="w-0 lg:w-1/6"></div>
   </div>
+  <div class="flex flex-row justify-end w-0 invisible md:visible md:w-3/6 lg:w-2/6 py-2">
+    <div class="flex-col sm:mr-6 mr-0">
+      <div class="flex flex-row space-x-4 items-center justify-end my-4">
+        <a href="https://www.linkedin.com/in/camilleanelli/"><i
+            class="text-purple-900 hover:text-purple-700 fa-2x fab fa-linkedin"></i></a>
+        <a href="mailto:anelli.dev@gmail.com" target="_blank">
+          <i class="text-purple-900 hover:text-purple-700 fa-2x fas fa-envelope"></i>
+        </a>
+        <a href="https://github.com/camilleanelli" target="_blank"><i
+            class="text-purple-900 hover:text-purple-700 fa-2x fab fa-github-square"></i></a>
+        <a href="https://twitter.com/CamilleAnelli"><i
+            class="text-purple-900 hover:text-purple-700 fa-2x fab fa-twitter-square"></i>
+        </a>
+      </div>
+      <div class="mt-56 bg-cover bg-center shadow-xs rounded-lg w-64 h-64"
+        style="background-image: url(/assets/images/camilleee.jpg)">
+      </div>
+    </div>
+  </div>
+  <div class="w-0 lg:w-1/6"></div>
 </div>
