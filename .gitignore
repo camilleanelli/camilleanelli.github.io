@@ -4,3 +4,4 @@ _site
 article-idea.md
 node_modules
 drafts
+.jekyll-cache
