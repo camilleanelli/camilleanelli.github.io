@@ -35,11 +35,9 @@ defaults:
       layout: "default"
 
 title: Anelli Dev
-
-description: >- # this means to ignore newlines until "baseurl:"
-  Blog - Web developer
+description: Blog - Web developer
 baseurl: "/articles" # the subpath of your site, e.g. /blog
-url: "http://camilleanelli.fr" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://camilleanelli.fr" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: CamilleAnelli
 github_username:  camilleanelli
 
