@@ -49,6 +49,7 @@ highlighter: rouge
 plugins:
   - jekyll-feed
   - jekyll-gist
+  - jekyll-sitemap
 
 
 
