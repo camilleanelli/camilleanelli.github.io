@@ -34,12 +34,12 @@ defaults:
     values:
       layout: "default"
 
-title: Anelli Dev
-description: Blog - Web developer
-baseurl: "/articles" # the subpath of your site, e.g. /blog
+author:
+  name: camilleanelli
+  email: anelli.dev@gmail.com
+description: > # this means to ignore newlines until "show_excerpts:"
+  Blog - Web developer - Freelance
 url: "https://camilleanelli.fr" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: CamilleAnelli
-github_username:  camilleanelli
 
 # Build settings
 theme: minima
