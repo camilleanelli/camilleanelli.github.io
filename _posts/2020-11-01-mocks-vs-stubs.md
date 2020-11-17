@@ -9,7 +9,7 @@ resume: Ces 2 notions “stubs” et “mocks” peuvent parfois prêter à conf
 
 ---
 
-Lors d'une mission, j'ai travaillé sur un projet comportant énormément de tests unitaires. Des tests composés essentiellements de tests doubles (des 'stubs' et des 'mocks').
+Lors d'une récente mission, j'ai travaillé sur un projet comportant énormément de tests unitaires. Ces tests étaient composés essentiellements de 'stubs' et de'mocks'.
 
 Résultat, la suite de 1300 tests ne prenait que moins d'une minute à tourner!🔥 🎉
 
@@ -17,10 +17,11 @@ Ces 2 notions "stubs" et "mocks" peuvent parfois prêter à confusion. Quelle es
 En plus des avantages, y a t-il aussi des inconvénients à les utiliser ?
 
 ---
+Lorsqu'on entend parler de 'stubs' et de 'mocks', on pense aux tests doubles.
 
 ### Les tests doubles
 
-Les mocks, les stubs (et les Spy) sont appelés des “test doubles”. Un “test double” est un test qui tourne le plus souvent sur de faux objets (des copies d'objets),  et qui simule les comportements réels des objets testés.
+Les mocks, les stubs (et les Spy) sont appelés des “test doubles”. Un “test double” est un test qui tourne le plus souvent sur de faux objets (des copies d'objets), et qui simule les comportements de ces objets.
 
 Pour illustrer ce concept de **test double**, on pourrait penser à la doublure d’une actrice : elle est remplacée par une personne qui effectue les actions à sa place, ainsi elle est protégée de tout désagrément.
 

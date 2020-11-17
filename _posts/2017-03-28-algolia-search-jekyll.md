@@ -1,5 +1,5 @@
 ---
-tag: [french-article, ruby, jekyll, algolia]
+tag: [VF, Jekyll, Algolia]
 layout: post
 title: Jekyll, ajouter Algolia search
 ---
