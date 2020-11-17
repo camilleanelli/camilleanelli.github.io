@@ -37,7 +37,7 @@ Pour illustrer ce concept de **test double**, on pourrait penser à la doublure 
 
 ✅ Pour ne pas à refaire la configuration dans les tests de certaines dépendances qui peuvent être compliquées. On peut retourner directement le résultat d'une méthode d'un service sans avoir à éxecuter cette méthode.
 
-✅ Pour pouvoir écrire en TDD (Test Driven Development), bouchonner [ajouter le lien]  (retourner un résultat sans executer) les objets et des méthodes pas encore implémentés : on peut simuler leur comportement futur sans se soucier qu'ils ne soient pas encore implémentés.
+✅ Pour pouvoir écrire en TDD (Test Driven Development) : on peut simuler les comportements futurs de méthodes avant de les implémenter.
 
 Dans la suite de cet article, je vais utiliser RSpec pour présenter ces 2 concepts. Vous pouvez ajouter la gem à votre Gemfile ou via :
 
