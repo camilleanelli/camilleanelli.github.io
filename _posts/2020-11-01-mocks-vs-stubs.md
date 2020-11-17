@@ -16,7 +16,6 @@ Résultat, la suite de 1300 tests ne prenait que moins d'une minute à tourner!�
 Ces 2 notions "stubs" et "mocks" peuvent parfois prêter à confusion. Quelle est la différence ?
 En plus des avantages, y a t-il aussi des inconvénients à les utiliser ?
 
----
 Lorsqu'on entend parler de 'stubs' et de 'mocks', on pense aux tests doubles.
 
 ### Les tests doubles
