@@ -1,5 +1,5 @@
 ---
-tag: [VF, Ruby, Rails, RSpec]
+tag: [Ruby, Rails, RSpec]
 layout: post
 title: Stubs vs Mocks avec RSpec
 resume: Ces 2 notions “stubs” et “mocks” peuvent parfois prêter à confusion.
@@ -117,7 +117,7 @@ actor.current_movie
 
 ### Mocks
 
-La première différence avec le 'stub' est la vérification de la méthode  qui est appelée sur l'objet.
+La première différence avec le 'stub' est la vérification de la méthode qui est appelée sur l'objet.
 
 Ensuite, je peux retourner la valeur de mon choix lorsque cette méthode est appelée.
 
@@ -184,5 +184,4 @@ Un mock est donc à la fois un bouchon (‘stub’), et une assertion (on vérif
 Comme nous l'avons vu, les stubs et les mocks de tests peuvent simplifier et accélérer drastiquement une suite de test en bouchonnant certains appels.
 Ce sont des outils utiles à maitriser dans une démarche TDD, et permettent aussi de simplifier certains tests.
 
-Il faut cependant les utiliser avec précaution. Lorsqu'on bouchonne les appels, les comportements des méthodes ne sont pas réels, ils sont simulés et définis dans les tests. On peut se retrouver avec une suite de tests qui passe, alors que notre  code ne fonctionne pas. En principe, les tests d’intégrations comblent cet inconvénient car ils font de vrais appels sur de vrais objets, et testent donc les comportements réels.
-Je n'ai pas abordé le sujet des Spy (une autre forme de test double),  car je n'ai à ce jour ni eu l'occasion de m'en servir, ni trouvé le besoins de m'en servir.
+Il faut cependant les utiliser avec précaution. Lorsqu'on bouchonne les appels, les comportements des méthodes ne sont pas réels, ils sont simulés et définis dans les tests. On peut se retrouver avec une suite de tests qui passe, alors que notre code ne fonctionne pas. En principe, les tests d’intégrations comblent cet inconvénient car ils font de vrais appels sur de vrais objets, et testent donc les comportements réels.
