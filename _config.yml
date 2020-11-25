@@ -37,6 +37,8 @@ defaults:
 author:
   name: camilleanelli
   email: anelli.dev@gmail.com
+  company: Anelli Dev
+
 description: > # this means to ignore newlines until "show_excerpts:"
   Blog - Web developer - Freelance
 url: "https://camilleanelli.fr" # the base hostname & protocol for your site, e.g. http://example.com
@@ -50,8 +52,6 @@ plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-sitemap
-
-
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
